@@ -142,7 +142,7 @@ html {
 
     height: 50px;
     width: 50px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     color: grey;
     border: 1px solid black;
 }
