@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- MEC Project
+    Instructions:
+
+    Add the link or image directory (with respect to this html file) in the slides.json
+    file as per the default examples given.
+    Make sure you add a "\" to the end of the line in json for miltiline string.
+
+
+
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>frescammer</title>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/slide.json"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
+
+  </head>
+  <body>
+
+
+    <div class="topnav">
+          <div href="#">
+            <img src="static/assets/logo.jpg" alt=" " style="height:40px; margin: 4px; margin-top: 2px;" >
+            <span>Frescamer</span>
+
+            <button class="openbtn" onclick="openNav()">☰</button>
+
+          </div>
+
+
+
+    </div>
+    <div class="page-body" style="margin-top: -5px;">
+
+        <!--Each div with class "slides is each slide of the slideshow. It has two children, image and textbox." -->
+        <!-- For adding more slides, make sure the master div is called "slides", everything else is arbitrary -->
+
+        <div class="slides" id="slide1">
+
+
+        </div>
+
+        <button class="scroll_btn display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+
+    </div>
+
+
+    <div id="mySidepanel" class="sidepanel">
+              <button href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:42px; width: auto; text-align: center; background-color: red; border: 0px;">×</button>
+              <a href="#">Home</a>
+              <a href="#">Products</a>
+              <a href="#">Recipes</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Services</a>
+              <a href="#">Store Finder</a>
+              <a href="#">Gallery</a>
+    </div>
+
+    <script>
+      showDivs(0);
+    </script>
+  </body>
+</html>
