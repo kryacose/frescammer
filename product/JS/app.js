@@ -3,6 +3,7 @@ let mainCard = document.getElementById('card-main');
 let close = document.getElementById('close');
 let main = document.getElementById('box');
 
+
 let clicked = function(e){
         alert('clicked');
     }
@@ -11,7 +12,7 @@ close.addEventListener('click', ()=>{
     mainCard.style.display = 'none';
 })
 
-let products = data.content;
+let products = JSON.parse(data);
 let len = products.length;
 let marker = 0;
 
