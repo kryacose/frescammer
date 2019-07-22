@@ -4,9 +4,15 @@ let close = document.getElementById('close');
 let main = document.getElementById('box');
 
 
-let clicked = function(e){
-        alert('clicked');
-    }
+ function openNav() {
+    document.getElementById("mySidepanel").style.width = "25vw";
+
+  }
+
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+
+  }
 
 close.addEventListener('click', ()=>{
     mainCard.style.display = 'none';

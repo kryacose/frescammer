@@ -1,6 +1,80 @@
 body{
     margin:0px;
 }
+
+.topnav {
+  overflow: auto;
+  background-color: #2d89ef;
+  width: 100%;
+  max-height: 70px;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  font-size: 50px;
+  border-radius: 2px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #618BEC; */
+  position: absolute;
+  background: black;
+  right: 0;
+  top: 0;
+  background-color: inherit;
+    height:58px;
+  color: white;
+  padding:  25px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: black;
+}
+.sidepanel  {
+  color: white;
+  opacity: 0.8;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  height: 250px;
+  top: 0;
+  right: 0;
+  background-color: red;
+  overflow-x: hidden;
+  transition: 100ms ease-out;
+  padding-top: 60px;
+  height: 100%;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 3vw;
+  color:white;
+  border: 1px black;
+  text-decoration: none;
+  display: block;
+  transition: 150ms ease-in;
+}
+
+.sidepanel a:hover {
+  color: red;
+  background-color: black;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.closebtn:hover {
+
+  color: white;
+}
+
 #box{
     display: block;
     background-color: white;
