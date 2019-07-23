@@ -25,33 +25,28 @@
 
     <div class="container">
     <div class="topnav">
-          <div href="#">
-            <img src="static/assets/logo.png" alt="Frescamer" style="height:40px; margin-left: 15px; margin-top: 5px;">
-
-            <button class="openbtn" onclick="openNav()">☰</button>
+          <div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img src="static/assets/logo.png" alt="Frescamer" style="height:40px; margin-left: 15px; margin-top: 5px;">
+            </a>
+          <button class="openbtn" onclick="openNav()">☰</button>
 
           </div>
-
-
 
     </div>
 
 
         <!--Each div with class "slides is each slide of the slideshow. It has two children, image and textbox." -->
-        <!-- For adding more slides, make sure the master div is called "slides", everything else is arbitrary -->
+        <!-- To add more slides, follow the slides.json file instructions. -->
 
-        <div class="slides" id="slide1">
+    <div class="slides" id="slide1"></div>
 
-
-        </div>
-
-        <button class="scroll_btn display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button>
-
+    <button class="scroll_btn display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button>
 
 
     <div class="botpanel">
-      About US<br> We make food <br> and juice<br> ALl rights Reserved <br> 2019
+              About US<br> We make food <br> and juice<br> ALl rights Reserved <br> 2019
     </div>
 
     <div id="mySidepanel" class="sidepanel">
@@ -64,12 +59,11 @@
               <a href="#">Store Finder</a>
               <a href="#">Gallery</a>
 
-
     </div>
 
 
     <script>
-      showDivs(0);
+      showDivs(0);  // To load the first image on page load.
     </script>
   </body>
 </html>
