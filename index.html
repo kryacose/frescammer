@@ -20,12 +20,13 @@
 
   </head>
   <body>
+    <div class="blur-background"></div>
 
 
+    <div class="container">
     <div class="topnav">
           <div href="#">
-            <img src="static/assets/logo.jpg" alt=" " style="height:40px; margin: 4px; margin-top: 2px;" >
-            <span>Frescamer</span>
+            <img src="static/assets/logo.png" alt="Frescamer" style="height:40px; margin-left: 15px; margin-top: 5px;">
 
             <button class="openbtn" onclick="openNav()">☰</button>
 
@@ -34,7 +35,7 @@
 
 
     </div>
-    <div class="page-body" style="margin-top: -5px;">
+
 
         <!--Each div with class "slides is each slide of the slideshow. It has two children, image and textbox." -->
         <!-- For adding more slides, make sure the master div is called "slides", everything else is arbitrary -->
@@ -49,11 +50,12 @@
 
 
 
+    <div class="botpanel">
+      About US<br> We make food <br> and juice<br> ALl rights Reserved <br> 2019
     </div>
 
-
     <div id="mySidepanel" class="sidepanel">
-              <button href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:42px; width: auto; text-align: center; background-color: red; border: 0px;">×</button>
+              <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
               <a href="#">Home</a>
               <a href="#">Products</a>
               <a href="#">Recipes</a>
@@ -61,7 +63,10 @@
               <a href="#">Services</a>
               <a href="#">Store Finder</a>
               <a href="#">Gallery</a>
+
+
     </div>
+
 
     <script>
       showDivs(0);

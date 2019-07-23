@@ -2,18 +2,22 @@ body,
 html {
   background-color: black;
   height: 100%;
-  width:100%;
+  width:  100%;
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden; /*change this later*/
+  z-index: 0;
 
 }
 
+
 .topnav {
+  z-index: 50;
   overflow: auto;
   background-color: #2d89ef;
   width: 100%;
-  max-height: 70px;
+  opacity: 0.95;
+  max-height: 75px;
   display: inline-block;
   overflow: hidden;
   color: white;
@@ -31,64 +35,80 @@ html {
   right: 0;
   top: 0;
   background-color: inherit;
-  color: white;
-  padding:  25px;
+  color: snow;
+  padding:  18px;
   border: none;
-
 }
 
 .openbtn:hover {
-
+  transition: ease-in 200ms;
   background-color: black;
 }
 
-.page-body{
-    background-color: black;
-    position: relative;
-    height: 85vh;
-    width: 100vw;
-    top: 0px;
-    left: 0;
+.blur-background{
+
+  background-color: black;
+  opacity: 0.4;
+  height: 100%;
+  min-width: 100%;
+  width: auto;
+  position: absolute;
+  left:0;
+  top: 0;;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
 }
+
 
 .slides{
 
-  width: 100%;
+  max-width: 100%;
   height: auto; /* Make this == "auto%" if you want to maintain aspect ratio and not to fill page */
   position: absolute;
   z-index: 0;
   display: inline-block;
-  overflow-y: auto;
+  overflow: hidden;
+  margin-top: -5px;
 }
 
 .slides > img{    /* The slide image */
-    width: 100vw;
-    overflow-y: auto;
+    min-width: 100vw;
+    min-height: 75vh;
+    overflow: hidden;
     margin: auto;
     height: auto;
-    opacity: 0.7;
-    position: relative;
+    opacity: 0.75;
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .slides > div{    /* The text box*/
-    background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    font-size: 28px;
+    background: rgba(0, 0, 0, 0.6);
+    word-wrap: break-word;
+    overflow: auto;
+    font-size: 26px;
     color: white;
-    padding: 20px;
-    width: 25%;
+    padding: 15px;
+    max-width: 30%;
+    width: auto;
     height: auto;
     max-height: 40%;
     min-height: 50px;
-    display: inline-block;
+    display: table-cell;
     border: 1px solid grey;
 
     z-index: 100;
-
+    vertical-align: middle;
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin-left: -13%;    /* Position of the box */
+    top: 45%;
+    margin-bottom: 20px;
+    margin-left: -15%;    /* Position of the box */
     text-align: center;
 
 
@@ -101,7 +121,7 @@ html {
 }
 .sidepanel  {
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   width: 0;
   position: fixed;
   z-index: 99;
@@ -119,7 +139,7 @@ html {
   padding: 8px 8px 8px 32px;
   width: 100%;
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 30px;
   color:white;
   border: 1px black;
   text-decoration: none;
@@ -128,15 +148,20 @@ html {
 }
 
 .sidepanel a:hover {
+
   color: red;
   background-color: black;
 }
 
 .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: 2px;
+  right: 15px;
+  font-size: 42px;
+  width: auto;
+  text-align: center;
+  background-color: red;
+  border: 0px;
 }
 
 .closebtn:hover {
@@ -148,35 +173,73 @@ html {
 
 .scroll_btn{
     position: absolute;
-    height: 50px;
+    height: 200px;
     width: 50px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     color: grey;
-    border: 1px solid black;
-    position: absolute;
+    border: 0px solid black;
+    margin-top: -125px;
 }
 
 .scroll_btn:hover{
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
 
 }
 
 .display-left{
 
     left: 0px;
-    top: 25vw;
-    margin-top: -25px;
+    margin-left: -10px;
+    position: absolute;
+    top: 50vh;
+}
 
+.display-left:hover{
+    transition: ease-in 300ms;
+    transition-property: margin || color;
+    margin-left: -5px;
 }
 
 
 
 .display-right{
 
-
+    margin-right: -10px;
     right: 0px;
-    top: 25vw;
-    margin-top: -25px;
+    position: absolute;
+    top: 50vh;
+}
 
+
+.display-right:hover{
+    transition: ease-in 300ms;
+    margin-right: -5px;
+    transition-property: margin || color;
+}
+
+
+.botpanel{
+  overflow: auto;
+  border-top: 1px solid white;
+  opacity: 1;
+  z-index: 100;
+  background-color: black;
+  width: 100%;
+  height: 25px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.9;
+  color: white;
+  font-size: 20px;
+  border-radius: 2px;
+  bottom: 0;
+  text-align: center;
+}
+
+.botpanel:hover{
+    transition: ease-in 100ms;
+    padding: 20px;
+    height: auto;
 }
