@@ -90,27 +90,25 @@ html {
 .slides > div{    /* The text box*/
     background: rgba(0, 0, 0, 0.6);
     word-wrap: break-word;
-    overflow: auto;
+    overflow: hidden;
     font-size: 26px;
     color: white;
     padding: 15px;
-    max-width: 30%;
-    width: auto;
+    width: 30%;
     height: auto;
-    max-height: 40%;
+    max-height: 30%;
     min-height: 50px;
     display: table-cell;
     border: 1px solid grey;
-
     z-index: 100;
     vertical-align: middle;
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 40%;
     margin-bottom: 20px;
     margin-left: -15%;    /* Position of the box */
     text-align: center;
-
+    transition: ease-in 100ms;
 
 }
 
@@ -118,6 +116,7 @@ html {
 
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid white;
+
 }
 .sidepanel  {
   color: white;
@@ -179,9 +178,12 @@ html {
     color: grey;
     border: 0px solid black;
     margin-top: -125px;
+    transition: ease-in 300ms;
+    transition-property: margin || color;
 }
 
 .scroll_btn:hover{
+
     color: white;
     border: 1px solid white;
 
@@ -190,22 +192,19 @@ html {
 .display-left{
 
     left: 0px;
-    margin-left: -10px;
+    margin-left: -15px;
     position: absolute;
     top: 50vh;
 }
 
 .display-left:hover{
-    transition: ease-in 300ms;
-    transition-property: margin || color;
-    margin-left: -5px;
+
+    margin-left: -3px;
 }
-
-
 
 .display-right{
 
-    margin-right: -10px;
+    margin-right: -15px;
     right: 0px;
     position: absolute;
     top: 50vh;
@@ -213,9 +212,7 @@ html {
 
 
 .display-right:hover{
-    transition: ease-in 300ms;
-    margin-right: -5px;
-    transition-property: margin || color;
+    margin-right: -3px;
 }
 
 
@@ -223,7 +220,7 @@ html {
   overflow: auto;
   border-top: 1px solid white;
   opacity: 1;
-  z-index: 100;
+  z-index: 101;
   background-color: black;
   width: 100%;
   height: 25px;
