@@ -4,46 +4,11 @@ html {
   height: 100%;
   width:  100%;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: hidden; /*change this later*/
-  z-index: 0;
-
-}
-
-
-.topnav {
-  z-index: 50;
-  overflow: auto;
-  background-color: #2d89ef;
-  width: 100%;
-  opacity: 0.95;
-  max-height: 75px;
-  display: inline-block;
   overflow: hidden;
-  color: white;
-  font-size: 50px;
-  border-radius: 2px;
+  z-index: 0;
+  word-wrap: break-word;
 }
 
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  /* background-color: #618BEC; */
-  position: absolute;
-  background: black;
-  right: 0;
-  top: -3px;
-  background-color: inherit;
-  color: snow;
-  padding: 18px;
-  border: none;
-}
-
-.openbtn:hover {
-  transition: ease-in 200ms;
-  background-color: black;
-}
 
 .blur-background{
 
@@ -60,8 +25,49 @@ html {
   background-size: 100% 100%;
   filter: blur(8px);
   -webkit-filter: blur(8px);
+}
+
+
+.topnav {
+  z-index: 50;
+  background-color: #2d89ef;
+  width: 100%;
+  opacity: 0.75;
+  max-height: 75px;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  font-size: 50px;
+  border-radius: 2px;
+  transition: 500ms;
+}
+.topnav:hover {
+  background-color: #3e85aa;
 
 }
+
+
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #618BEC; */
+  position: absolute;
+  background: black;
+  right: 0;
+  top: -3px;
+  background-color: inherit;
+  color: snow;
+  padding: 18px;
+  border: none;
+}
+.openbtn:hover {
+  transition: ease-in 200ms;
+  background-color: black;
+}
+
+
+
 
 
 .slides{
@@ -89,7 +95,7 @@ html {
 
 .slides > div{    /* The text box*/
     background: rgba(0, 0, 0, 0.6);
-    word-wrap: break-word;
+
     overflow: hidden;
     font-size: 26px;
     color: white;
@@ -113,7 +119,10 @@ html {
 }
 
 .slides >div:hover{
-
+    max-height: 35%;
+    width: 35% ;
+    margin-left: -18%;
+    font-size: 30px;
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid white;
 
@@ -143,12 +152,12 @@ html {
   border: 1px black;
   text-decoration: none;
   display: block;
-  transition: 150ms ease-in;
+  transition: 100ms ease-in;
 }
 
 .sidepanel a:hover {
-
-  color: red;
+  font-size: 42px;
+  color: #8B0000;;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -159,12 +168,13 @@ html {
   font-size: 42px;
   width: auto;
   text-align: center;
-  background-color: red;
+  background-color: inherit;
   border: 0px;
+  transition: ease-in 100ms;
 }
 
 .closebtn:hover {
-
+  font-size: 50px;
   color: white;
 }
 
@@ -179,11 +189,10 @@ html {
     border: 0px solid black;
     margin-top: -125px;
     transition: ease-in 300ms;
-    transition-property: margin || color;
 }
 
 .scroll_btn:hover{
-
+    font-size: 42px;
     color: white;
     border: 1px solid white;
 
@@ -217,6 +226,7 @@ html {
 
 
 .botpanel{
+
   overflow: auto;
   border-top: 1px solid white;
   opacity: 1;
@@ -228,15 +238,16 @@ html {
   overflow: hidden;
   position: absolute;
   opacity: 0.9;
-  color: white;
+  color: snow;
   font-size: 20px;
   border-radius: 2px;
   bottom: 0;
   text-align: center;
+  transition: ease-in 100ms;
 }
 
 .botpanel:hover{
-    transition: ease-in 100ms;
+
     padding: 20px;
     height: auto;
 }
