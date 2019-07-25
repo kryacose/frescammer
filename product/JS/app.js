@@ -5,7 +5,7 @@ let main = document.getElementById('box');
 
 
  function openNav() {
-    document.getElementById("mySidepanel").style.width = "25vw";
+    document.getElementById("mySidepanel").style.width = "350px";
 
   }
 
@@ -28,7 +28,7 @@ for (let i = 0; i<products.length; i+=3){
     cardRow.className = 'cardRow';
     for(let j = i; j<i+3; j++){
         if(marker < len){
-            
+
             /* checking the star rating using the rating from the data */
             let rates = document.createElement('div');
             rates.className = 'star';
@@ -41,7 +41,7 @@ for (let i = 0; i<products.length; i+=3){
             for(let k=0; k<products[j].rating; k++){
                 rates.childNodes[k].classList.add('checked');
             }
-            
+
             /* creating and appending the product cards into the DOM */
             let card = document.createElement('div');
             card.className = "card";
@@ -58,7 +58,7 @@ for (let i = 0; i<products.length; i+=3){
                                     <p style='display: none' class="disp">${products[j].description}</p>
                                 </div>`
             card.childNodes[1].childNodes[5].innerHTML = rates.innerHTML;
-            
+
             /* adding function for click response */
             card.addEventListener('click', function(){
                 cardData = card.childNodes;
@@ -78,4 +78,3 @@ for (let i = 0; i<products.length; i+=3){
     }
     main.appendChild(cardRow);
 }
-
