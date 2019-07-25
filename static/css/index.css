@@ -48,26 +48,6 @@ html {
 
 
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  /* background-color: #618BEC; */
-  position: absolute;
-  background: black;
-  right: 0;
-  top: -3px;
-  background-color: inherit;
-  color: snow;
-  padding: 18px;
-  border: none;
-}
-.openbtn:hover {
-  transition: ease-in 200ms;
-  background-color: black;
-}
-
-
-
 
 
 .slides{
@@ -128,6 +108,28 @@ html {
 
 }
 
+/* Global sidepanel */
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #618BEC; */
+  position: absolute;
+  background: black;
+  right: 0;
+  top: -3px;
+  background-color: inherit;
+  color: snow;
+  padding: 18px;
+  border: none;
+}
+.openbtn:hover {
+  transition: ease-in 200ms;
+  background-color: black;
+}
+
+
+
 .sidepanel  {
   color: white;
   opacity: 0.95;
@@ -178,6 +180,8 @@ html {
   font-size: 50px;
   color: white;
 }
+
+/* END OF GLOBAL SIDEPANEL */ 
 
 
 

@@ -20,25 +20,7 @@ html {
   border-radius: 2px;
 }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  /* background-color: #618BEC; */
-  position: absolute;
-  background: black;
-  right: 0;
-  top: 0;
-  background-color: inherit;
-  color: white;
-  padding:  25px;
-  border: none;
 
-}
-
-.openbtn:hover {
-
-  background-color: black;
-}
 
 .page-body{
     background-color: black;
@@ -98,8 +80,30 @@ html {
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid white;
 }
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #618BEC; */
+  position: absolute;
+  background: black;
+  right: 0;
+  top: 0;
+  background-color: inherit;
+  color: white;
+  padding:  25px;
+  border: none;
+
+}
+
+.openbtn:hover {
+
+  background-color: black;
+}
+
 .sidepanel  {
   color: white;
+  opacity: 0.95;
   width: 0;
   position: fixed;
   z-index: 99;
@@ -117,17 +121,18 @@ html {
   padding: 8px 8px 8px 32px;
   width: 100%;
   text-decoration: none;
-  font-size: 42px;
+  font-size: 30px;
   color:white;
   border: 1px black;
   text-decoration: none;
   display: block;
-  transition: 150ms ease-in;
+  transition: 100ms ease-in;
 }
 
 .sidepanel a:hover {
-  color: red;
-  background-color: black;
+  font-size: 42px;
+  color: #8B0000;;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .sidepanel .closebtn {

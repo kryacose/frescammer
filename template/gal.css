@@ -19,47 +19,86 @@ section::before,section::after {
     content: '';
 }
 
-  
-  
-.sidepanel  {
-    color: white;
-    width: 0;
-    position: fixed;
-    z-index: 99;
-    height: 250px;
-    top: 0;
-    right: 0;
-    background-color: red;
-    overflow-x: hidden;
-    transition: 100ms ease-out;
-    padding-top: 60px;
-    height: 100%;
-  }
-  
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    width: 100%;
-    text-decoration: none;
-    font-size: 42px;
-    color:white;
-    border: 1px black;
-    text-decoration: none;
-    display: block;
-    transition: 150ms ease-in;
-  }
-  
-  .sidepanel a:hover {
-    color: red;
-    background-color: black;
-  }
-  
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-  }
 
+
+
+/* Global sidepanel */
+
+.openbtn {
+  z-index: 50;
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #618BEC; */
+  position: absolute;
+  background: black;
+  right: 0;
+  margin-top: -7px;
+  background-color: inherit;
+  color: snow;
+  padding: 18px;
+  border: none;
+  background-color: black;
+}
+.openbtn:hover {
+  transition: ease-in 200ms;
+  background-color: black;
+  color: red;
+}
+
+
+
+.sidepanel  {
+  color: white;
+  opacity: 0.95;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  height: 250px;
+  top: 0;
+  right: 0;
+  background-color: red;
+  overflow-x: hidden;
+  transition: 100ms ease-out;
+  padding-top: 60px;
+  height: 100%;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 30px;
+  color:white;
+  border: 1px black;
+  text-decoration: none;
+  display: block;
+  transition: 100ms ease-in;
+}
+
+.sidepanel a:hover {
+  font-size: 42px;
+  color: #8B0000;;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.closebtn {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  font-size: 42px;
+  width: auto;
+  text-align: center;
+  background-color: inherit;
+  border: 0px;
+  transition: ease-in 100ms;
+}
+
+.closebtn:hover {
+  font-size: 50px;
+  color: white;
+}
+
+/* END OF GLOBAL SIDEPANEL */
 
 
 
@@ -94,7 +133,7 @@ section::before,section::after {
         margin-top:0px;
         z-index: 100;
     }
-    
+
     margin:0 auto;
 }
 .menu-titles h1 {
@@ -124,17 +163,17 @@ section::before,section::after {
 
 
 .topnav {
-    
+
     background-color: #2d89ef;
     width: 100%;
     height: 70px;
-    
-    
+
+
     color: white;
     font-size: 50px;
     border-radius: 2px;
   }
-  
+
   .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -146,7 +185,7 @@ section::before,section::after {
     color: white;
     padding:  25px;
     border: none;
-  
+
   }
   .kidu{
       font-size: 100px;
