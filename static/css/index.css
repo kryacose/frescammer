@@ -76,7 +76,8 @@ html {
   height: 250px;
   top: 0;
   right: 0;
-  background-color: red;
+  background-color: darkblue;
+  background-color: red; /* I still think red is better */ 
   overflow-x: hidden;
   transition: 100ms ease-out;
   padding-top: 60px;

@@ -8,17 +8,18 @@
 <body>
         <div class="topnav">
                 <div href="#">
-                  <img src="static/assets/logo.jpg" alt=" " style="height:40px; margin: 4px; margin-top: 2px;" >
-                  <span>Frescammer</span>
-      
+                  <a href="../index.html">
+                      <img src="../static/assets/logo.png" alt="Frescamer" style="height:40px; margin-left: 15px; margin-top: 0px;">
+                  </a>
+
                   <button class="openbtn" onclick="openNav()">☰</button>
-      
+
                 </div>
-      
+
    <div id="mySidepanel" class="sidepanel">
-              <button href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:42px; width: auto; text-align: center; background-color: red; border: 0px;">×</button>
-              <a href="#">Home</a>
-              <a href="#">Products</a>
+              <button href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:42px; width: auto; text-align: center; border: 0px;">×</button>
+              <a href="../index.html">Home</a>
+              <a href="../product/index.html">Products</a>
               <a href="#">Recipes</a>
               <a href="#">Contact Us</a>
               <a href="#">Services</a>
@@ -27,22 +28,22 @@
     </div>
     <script>
             function openNav() {
-              document.getElementById("mySidepanel").style.width = "420px";
-  
+              document.getElementById("mySidepanel").style.width = "350px";
+
             }
-  
+
             function closeNav() {
               document.getElementById("mySidepanel").style.width = "0";
             }
-  
-  
+
+
             var slideIndex = 1; // Initially set the index to 1
             showDivs(slideIndex);
-  
+
             function plusDivs(n) {
               showDivs(slideIndex += n);
             }
-  
+
             function showDivs(n) {
               var i;
               var x = document.getElementsByClassName("slides");    // Put all slideshow elements inside same class name "slides".
@@ -53,10 +54,10 @@
               }
               x[slideIndex-1].style.display = "block";
             }
-  
+
       </script>
     <div id="food-menu" class="light-wrapper">
-        
+
         <div class="container inner">
         /*<h2 class="kidu"></h2>
 
@@ -109,9 +110,9 @@
 
         </div>
         <!-- /.container -->
-        
+
     </div>
 
-   
+
 </body>
 </html>
