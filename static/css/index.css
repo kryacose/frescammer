@@ -27,6 +27,8 @@ html {
   -webkit-filter: blur(8px);
 }
 
+/* Global Website Stuff - Top Panel and side Panel */
+
 
 .topnav {
   z-index: 50;
@@ -46,74 +48,9 @@ html {
 
 }
 
-
-
-
-
-.slides{
-
-  max-width: 100%;
-  height: auto; /* Make this == "auto%" if you want to maintain aspect ratio and not to fill page */
-  position: absolute;
-  z-index: 0;
-  display: inline-block;
-  overflow: hidden;
-  margin-top: -5px;
-}
-
-.slides > img{    /* The slide image */
-    min-width: 100vw;
-    min-height: 75vh;
-    overflow: hidden;
-    margin: auto;
-    height: auto;
-    opacity: 0.75;
-    display: block;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.slides > div{    /* The text box*/
-    background: rgba(0, 0, 0, 0.6);
-
-    overflow: hidden;
-    font-size: 26px;
-    color: white;
-    padding: 15px;
-    width: 30%;
-    height: auto;
-    max-height: 30%;
-    min-height: 50px;
-    display: table-cell;
-    border: 1px solid grey;
-    z-index: 100;
-    vertical-align: middle;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    margin-bottom: 20px;
-    margin-left: -15%;    /* Position of the box */
-    text-align: center;
-    transition: ease-in 100ms;
-
-}
-
-.slides >div:hover{
-    max-height: 35%;
-    width: 35% ;
-    margin-left: -18%;
-    font-size: 30px;
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid white;
-
-}
-
-/* Global sidepanel */
-
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  /* background-color: #618BEC; */
   position: absolute;
   background: black;
   right: 0;
@@ -181,7 +118,103 @@ html {
   color: white;
 }
 
-/* END OF GLOBAL SIDEPANEL */ 
+
+.botpanel{
+
+  overflow: auto;
+  border-top: 1px solid white;
+  opacity: 1;
+  z-index: 101;
+  background-color: black;
+  width: 100%;
+  height: 25px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.9;
+  color: snow;
+  font-size: 20px;
+  border-radius: 2px;
+  bottom: 0;
+  text-align: center;
+  transition: ease-in 100ms;
+}
+
+.botpanel:hover{
+
+    padding: 20px;
+    height: auto;
+}
+
+/* END OF GLOBAL SIDEPANEL */
+
+
+
+
+
+
+
+
+
+
+.slides{
+
+  max-width: 100%;
+  height: auto; /* Make this == "auto%" if you want to maintain aspect ratio and not to fill page */
+  position: absolute;
+  z-index: 0;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.slides > img{    /* The slide image */
+    min-width: 100vw;
+    min-height: 75vh;
+    overflow: hidden;
+    margin: auto;
+    height: auto;
+    opacity: 0.75;
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slides > div{    /* The text box*/
+    background: rgba(0, 0, 0, 0.6);
+
+    overflow: hidden;
+    font-size: 26px;
+    color: white;
+    padding: 15px;
+    width: 30%;
+    height: auto;
+    max-height: 30%;
+    min-height: 50px;
+    display: table-cell;
+    border: 1px solid grey;
+    z-index: 100;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-bottom: 20px;
+    margin-left: -15%;    /* Position of the box */
+    text-align: center;
+    transition: ease-in 100ms;
+
+}
+
+.slides >div:hover{
+    max-height: 35%;
+    width: 35% ;
+    margin-left: -18%;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+
+}
+
 
 
 
@@ -227,32 +260,4 @@ html {
 
 .display-right:hover{
     margin-right: -3px;
-}
-
-
-.botpanel{
-
-  overflow: auto;
-  border-top: 1px solid white;
-  opacity: 1;
-  z-index: 101;
-  background-color: black;
-  width: 100%;
-  height: 25px;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  opacity: 0.9;
-  color: snow;
-  font-size: 20px;
-  border-radius: 2px;
-  bottom: 0;
-  text-align: center;
-  transition: ease-in 100ms;
-}
-
-.botpanel:hover{
-
-    padding: 20px;
-    height: auto;
 }

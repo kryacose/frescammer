@@ -2,37 +2,49 @@ body{
     margin:0px;
 }
 
+/* Global Website Stuff - Top Panel and side Panel */
+
 .topnav {
-  overflow: auto;
+  z-index: 50;
   background-color: #2d89ef;
   width: 100%;
-  max-height: 70px;
+  opacity: 0.75;
+  max-height: 75px;
   display: inline-block;
   overflow: hidden;
   color: white;
   font-size: 50px;
   border-radius: 2px;
+  transition: 500ms;
 }
+.topnav:hover {
+  background-color: #3e85aa;
+
+}
+
+
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  /* background-color: #618BEC; */
   position: absolute;
   background: black;
   right: 0;
-  top: 0;
+  top: -3px;
   background-color: inherit;
-    height:58px;
-  color: white;
-  padding:  25px;
+  color: snow;
+  padding: 18px;
   border: none;
 }
 .openbtn:hover {
+  transition: ease-in 200ms;
   background-color: black;
 }
+
+
+
 .sidepanel  {
   color: white;
-  opacity: 0.8;
+  opacity: 0.95;
   width: 0;
   position: fixed;
   z-index: 99;
@@ -50,30 +62,66 @@ body{
   padding: 8px 8px 8px 32px;
   width: 100%;
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 30px;
   color:white;
   border: 1px black;
   text-decoration: none;
   display: block;
-  transition: 150ms ease-in;
+  transition: 100ms ease-in;
 }
 
 .sidepanel a:hover {
-  color: red;
-  background-color: black;
+  font-size: 42px;
+  color: #8B0000;;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: 2px;
+  right: 15px;
+  font-size: 42px;
+  width: auto;
+  text-align: center;
+  background-color: inherit;
+  border: 0px;
+  transition: ease-in 100ms;
 }
 
 .closebtn:hover {
-
+  font-size: 50px;
   color: white;
 }
+
+.botpanel{
+
+  overflow: auto;
+  border-top: 1px solid white;
+  opacity: 1;
+  z-index: 101;
+  background-color: black;
+  width: 100%;
+  height: 25px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.9;
+  color: snow;
+  font-size: 20px;
+  border-radius: 2px;
+  bottom: 0;
+  text-align: center;
+  transition: ease-in 100ms;
+}
+
+.botpanel:hover{
+
+    padding: 20px;
+    height: auto;
+}
+
+/* END OF GLOBAL SIDEPANEL */
+
 
 #box{
     display: block;
@@ -82,7 +130,7 @@ body{
     padding-bottom: 50px;
     margin-top: 50px;
     padding-top: 20px;
-    
+
 }
 #pro{
     font-size: 80px;
@@ -100,7 +148,7 @@ body{
     position: relative;
     top:30px;
     margin-top: 40px;
-    
+
 }
 .card{
     height: 300px;
@@ -130,7 +178,7 @@ body{
     border-width: thin;
     border-color: black;
     border-radius: 10px;
-    
+
 }
 .card:hover{
     box-shadow: 2px 2px 12px grey, -2px -2px 12px grey;
@@ -141,7 +189,7 @@ body{
     background-repeat: no-repeat;
     border-radius: 10px 10px 0px 0px;
     width:cover;
-    height:150px; 
+    height:150px;
 }
 #prodImg-main{
     background-size:cover;
@@ -149,7 +197,7 @@ body{
     background-repeat: no-repeat;
     border-radius: 10px 10px 0px 0px;
     width:cover;
-    height:300px; 
+    height:300px;
 }
 .prod{
     width:cover;
