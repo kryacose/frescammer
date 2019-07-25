@@ -18,6 +18,7 @@
     showDivs(slideIndex += n);
   }
 
+
   function showDivs(n) {
 
 
