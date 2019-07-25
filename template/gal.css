@@ -24,26 +24,6 @@ section::before,section::after {
 
 /* Global sidepanel */
 
-.openbtn {
-  z-index: 50;
-  font-size: 20px;
-  cursor: pointer;
-  /* background-color: #618BEC; */
-  position: absolute;
-  background: black;
-  right: 0;
-  margin-top: -7px;
-  background-color: inherit;
-  color: snow;
-  padding: 18px;
-  border: none;
-  background-color: black;
-}
-.openbtn:hover {
-  transition: ease-in 200ms;
-  background-color: black;
-  color: red;
-}
 
 
 
@@ -101,29 +81,22 @@ section::before,section::after {
 
 .botpanel{
 
-  overflow: auto;
   border-top: 1px solid white;
-  opacity: 1;
   z-index: 101;
   background-color: black;
   width: 100%;
-  height: 25px;
-  display: block;
-  overflow: hidden;
-  position: absolute;
+  height: 120px;
   opacity: 0.9;
   color: snow;
   font-size: 20px;
-  border-radius: 2px;
-  bottom: 0;
+   /* position: absolute; Comment this if page has scroll. */
   text-align: center;
   transition: ease-in 100ms;
 }
 
 .botpanel:hover{
 
-    padding: 20px;
-    height: auto;
+    height: 220px;
 }
 
 /* END OF GLOBAL SIDEPANEL */
@@ -194,7 +167,7 @@ section::before,section::after {
 
     background-color: #2d89ef;
     width: 100%;
-    height: 70px;
+    height: 100px;
 
 
     color: white;
@@ -203,7 +176,7 @@ section::before,section::after {
   }
 
   .openbtn {
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
     /* background-color: #618BEC; */
     position: absolute;
@@ -215,6 +188,20 @@ section::before,section::after {
     border: none;
 
   }
+
+  .openbtn:hover {
+    font-size: 40px;
+    color: blue;
+    
+
+  }
+
+
+  .logo{
+    height: 80px; margin-left: 15px; margin-top: 5px;
+
+  }
+
   .kidu{
       font-size: 100px;
       color:#ed0121;
@@ -273,4 +260,30 @@ section::before,section::after {
         text-align: left;
         margin-top: 30px;
     }
-}
+    .topnav {
+      z-index: 50;
+      width: 100%;
+      height: 80px;
+    }
+    .topnav:hover {
+      background-color: #3e85aa;
+
+    }
+
+    .logo{
+      height:40px; margin-left: 15px; margin-top: 10px;
+
+    }
+    .openbtn {
+      opacity: 0.8;
+      font-size: 40px;
+      cursor: pointer;
+      position: absolute;
+      background: black;
+      right: 0;
+      top: -3px;
+      background-color: inherit;
+      color: snow;
+      padding: 18px;
+      border: none;
+    }
