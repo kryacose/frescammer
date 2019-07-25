@@ -1,0 +1,157 @@
+body,
+html {
+  background-color: white;
+  height: 100%;
+  margin: 0;
+
+}
+
+.topnav {
+  overflow: auto;
+  background-color: #2d89ef;
+  width: 100%;
+  height: 70px;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  font-size: 50px;
+  border-radius: 2px;
+}
+
+
+
+.page-body{
+    background-color: black;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+}
+
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #618BEC; */
+  position: absolute;
+  background: black;
+  right: 0;
+  top: 0;
+  background-color: inherit;
+  color: white;
+  padding:  25px;
+  border: none;
+
+}
+
+.openbtn:hover {
+
+  background-color: black;
+}
+
+.sidepanel  {
+  color: white;
+  opacity: 0.95;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  height: 250px;
+  top: 0;
+  right: 0;
+  background-color: red;
+  overflow-x: hidden;
+  transition: 100ms ease-out;
+  padding-top: 60px;
+  height: 100%;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 30px;
+  color:white;
+  border: 1px black;
+  text-decoration: none;
+  display: block;
+  transition: 100ms ease-in;
+}
+
+.sidepanel a:hover {
+  font-size: 42px;
+  color: #8B0000;;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+
+.scroll_btn{
+
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: grey;
+    border: 1px solid black;
+}
+
+.scroll_btn:hover{
+    color: white;
+    border: 2px solid white;
+
+}
+
+.display-left{
+
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -25px;
+
+}
+
+
+
+.display-right{
+
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -25px;
+
+}
+
+
+.row
+{
+  text-align:center; 
+}
+ .contact_us
+{
+  
+  font-size:22px;
+  font-family:sans-serif Roboto;
+  border: 1px solid #ced4da;
+  box-shadow: 1px 1px 1px #dee2e6;
+  border-radius:1%;
+  width: 48%;
+  margin-left: 26%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .contact_us {
+        font-size: 20px;
+        width: 90%;
+        margin-left: 5%;
+      }
+    .map{
+        width: 80%;
+    }
+}
