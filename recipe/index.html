@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,42 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat|PT+Sans+Narrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='./style/style.css'>
     <link rel="stylesheet" href='../static/assets/global.css'>
-
-    <title>Recipes</title>
+    <title>Products</title>
 </head>
-<body>
-    <div class="blur-background"></div>
 
+<body>
 
     <div class="container">
-    <div class="topnav">
-          <div>
-            <a href="#">
-                <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
-            </a>
-          <button class="openbtn" onclick="openNav()">☰</button>
+        <div class="topnav">
+            <div>
+                <a href="#">
+                    <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
+                </a>
+                <button class="openbtn" onclick="openNav()">☰</button>
 
-          </div>
+            </div>
 
+        </div>
     </div>
-    </div>
+
     <div id="mySidepanel" class="sidepanel">
         <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
         <a href="../index.html">Home</a>
         <a href="../product/index.html">Products</a>
-        <a href="../recipe/index.html">Recipes</a>
+        <a href="../recipe/index.html">
+            <p>Recipes</p>
+        </a>
         <a href="../contact/contact.html">Contact Us</a>
         <a href="#">Services</a>
         <a href="#">Store Finder</a>
         <a href="../gallery/gal.html">Gallery</a>
 
     </div>
-    <div id="card-main" >
-        <div id="prodImg-main" >
+
+
+
+    <div id="card-main">
+        <div id="prodImg-main">
             <div id="close"></div>
         </div>
         <div class="prod-main">
@@ -47,16 +52,19 @@
                 <p id="proName-main"></p>
                 <p class="price-main">&#8377 <span style="font-size: 30px;" id="rate"></span></p>
                 <div id="star-main"></div>
-                <p  id="disp-main"></p>
+                <p id="disp-main"></p>
             </div>
         </div>
     </div>
     <div id="box">
         <h1 id="pro">Recipes</h1>
+        <p id="ppro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </div>
 
 </body>
 <script type="application/javascript" src='./JS/data.json'></script>
 <script type="application/javascript" src='./JS/app.js'></script>
 <script type="application/javascript" src='../static/js/nav.js'></script>
+
 </html>

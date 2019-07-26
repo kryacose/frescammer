@@ -7,20 +7,33 @@ body{
     display: block;
     background-color: white;
     position: relative;
-    padding-bottom: 50px;
-    margin-top: 50px;
+    /* padding-bottom: 50px; */
+    margin-top: 70px;
     padding-top: 20px;
 
 }
+
+
 #pro{
-    font-size: 60px;
-    margin:30px 0px 0px 20px;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+#ppro{
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin-top: 20px;
 }
 .cardRow{
+    justify-content: space-evenly;
     display: flex;
     height: 300px;
-    width: 95%;
+    width: 100%;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -35,51 +48,57 @@ body{
     background-color: white;
     border-style: solid;
     border-width: thin;
-    border-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+    border-color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 40px;
-    transition: all 1s;
+    transition: all 100ms;
     cursor: pointer;
 }
 #card-main{
-    display: none;
-    height: 600px;
-    width:500px;
-    margin-left: -250px;
-    position:fixed;
-    left:50%;
-    top:50px;
+    display: none ;
+    height: 50vw;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left:10vw;
+    top:90px;
     z-index: 10;
     background-color: white;
-    border-style: solid;
+    /* border-style: solid;
     border-width: thin;
-    border-color: black;
-    border-radius: 10px;
+    border-color: lightgrey; */
+    box-shadow: 1px 1px 10px #777777, -1px 0px 10px #777777;
+    /* overflow: scroll; */
+
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "box1 box2";
 
 }
+
 .card:hover{
-    box-shadow: 2px 2px 12px grey, -2px -2px 12px grey;
-    height: 310px;
-    width: 300px;
+    box-shadow: 2px 2px 8px lightgrey, -2px -2px 8px lightgrey;
+    /* height: 310px;
+    width: 300px; */
 
 }
 .prodImg{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10px 10px 0px 0px;
     width:cover;
-    height:150px;
+    height:200px;
 }
 #prodImg-main{
+    grid-area: box2;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10px 10px 0px 0px;
-    width:cover;
-    height:300px;
+    width: 40vw;
+    height:50vw;
 }
 .prod{
     width:cover;
@@ -87,9 +106,10 @@ body{
     border-radius: 0px 0px 10px 10px;
 }
 .prod-main{
-    width:cover;
-    height:300px;
-    border-radius: 0px 0px 10px 10px;
+    grid-area: box1;
+    width:40vw;
+    height:50vw;
+    overflow: scroll;
 }
 .prodEtail{
     margin-left: auto;
@@ -132,16 +152,20 @@ p{
 #disp-main{
     text-align: justify;
     padding: 0px 30px;
+    font-size: 1.2em;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 #close{
-    width: 50px;
-    height: 50px;
+    width: 28px;
+    height: 28px;
     float:  right;
-    border: 1px solid red;
-    border-radius: 50px;
-    background-image: url(../images/close.png);
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: url("../../static/assets/close.png");
     background-size:cover;
+    /* background-color: black;
+    border-radius: 50px; */
+    /* opacity: 0.5; */
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -159,9 +183,78 @@ p{
     margin-right: auto;
 }
 @media (max-width : 767px){
-    .cardRow{
-        display: block;
+
+    #pro{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    
+    #ppro{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1em;
+        margin-top: 20px;
     }
 
+    .cardRow{
+        display: block;
+        height: fit-content;
+        margin: 0%;
+    }
+
+    .card{
+        height: 300px;
+        width:280px;
+        background-color: white;
+        border-style: solid;
+        border-width: thin;
+        border-color: lightgrey;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 45px;
+        transition: all 100ms;
+        cursor: pointer;
+    }
+
+
+    #prodImg-main{
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:100%;
+        height:cover;
+    }
+
+    .prod-main{
+        width:100%;
+        height: fit-content;
+        overflow: scroll;
+        margin-bottom: 80px;
+    }
+
+    #card-main{
+        
+        display: none;
+        height: 100%;
+        width:100%;
+        position: fixed;
+        margin: 0;
+        left: 0;
+        top:65px;
+        z-index: 10;
+        background-color: white;
+        /* border-style: solid;
+        border-width: thin;
+        border-color: lightgrey; */
+        grid-template-rows: auto ;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "box2"
+            "box1";    
+        overflow: scroll;
+    }
 
 }

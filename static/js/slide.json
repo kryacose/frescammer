@@ -1,9 +1,9 @@
 // Insert link of image and text below, as per given examples:
 slide = '[\
         {"location" : "static/images/1.jpg",\
-        "text" : "Welcome to Frescammer"},\
+        "text" : "Welcome to Frescamer"},\
         {"location" : "static/images/2.jpeg",\
-        "text" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."},\
+        "text" : "Historically, humans secured food through two methods: hunting and gathering and agriculture."},\
         {"location" : "static/images/3.jpeg",\
-        "text" : "Frescamer dolor in reprehenderit in fshbjhdfbvbrnjrn nwirn glernge rbgjr jebgern bg brgbrb bg b berbgrbrh b voluptate velit esse cillum dolore eu fugiat nulla pariatur."}\
+        "text" : "Since early times, farmers, fishermen, and trappers have preserved grains and produce in unheated buildings during the winter season."}\
 ]';

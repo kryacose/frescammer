@@ -4,7 +4,6 @@ let close = document.getElementById('close');
 let main = document.getElementById('box');
 
 
-
 close.addEventListener('click', ()=>{
     mainCard.style.display = 'none';
 })
@@ -14,10 +13,10 @@ let len = products.length;
 let marker = 0;
 
 /* converting the data from json into document elements*/
-for (let i = 0; i<products.length; i+=3){
+for (let i = 0; i<products.length; i+=4){
     let cardRow = document.createElement('div');
     cardRow.className = 'cardRow';
-    for(let j = i; j<i+3; j++){
+    for(let j = i; j<i+4; j++){
         if(marker < len){
 
             /* checking the star rating using the rating from the data */
@@ -58,7 +57,7 @@ for (let i = 0; i<products.length; i+=3){
                 document.getElementById('rate').innerText = cardData[1].childNodes[3].childNodes[1].innerText;
                 document.getElementById('star-main').innerHTML = cardData[1].childNodes[5].innerHTML;
                 document.getElementById('disp-main').innerText = cardData[1].childNodes[7].innerText;
-                mainCard.style.display = 'block';
+                mainCard.style.display = 'grid';
             })
             cardRow.appendChild(card);
             marker++;
