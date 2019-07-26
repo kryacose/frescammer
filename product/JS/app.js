@@ -4,16 +4,6 @@ let close = document.getElementById('close');
 let main = document.getElementById('box');
 
 
- function openNav() {
-    document.getElementById("mySidepanel").style.width = "350px";
-
-  }
-
-  function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-
-  }
-
 close.addEventListener('click', ()=>{
     mainCard.style.display = 'none';
 })

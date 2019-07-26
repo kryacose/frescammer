@@ -1,14 +1,4 @@
 
- function openNav() {
-    document.getElementById("mySidepanel").style.width = "300px";
-
-  }
-
-  function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-
-  }
-
 
   var slideIndex = 0; // Initially set the index to 1
   var slides = JSON.parse(slide);
