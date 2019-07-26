@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +7,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat|PT+Sans+Narrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='./style/style.css'>
-    <title>Products</title>
+    <title>Recipes</title>
 </head>
-
 <body>
+    <div class="blur-background"></div>
+
 
     <div class="container">
-        <div class="topnav">
-            <div>
-                <a href="#">
-                    <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
-                </a>
-                <button class="openbtn" onclick="openNav()">☰</button>
+    <div class="topnav">
+          <div>
+            <a href="#">
+                <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
+            </a>
+          <button class="openbtn" onclick="openNav()">☰</button>
 
-            </div>
+          </div>
 
-        </div>
     </div>
-
+    </div>
     <div id="mySidepanel" class="sidepanel">
         <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
         <a href="../index.html">Home</a>
@@ -37,11 +36,8 @@
         <a href="../template/gal.html">Gallery</a>
 
     </div>
-
-
-
-    <div id="card-main">
-        <div id="prodImg-main">
+    <div id="card-main" >
+        <div id="prodImg-main" >
             <div id="close"></div>
         </div>
         <div class="prod-main">
@@ -49,16 +45,15 @@
                 <p id="proName-main"></p>
                 <p class="price-main">&#8377 <span style="font-size: 30px;" id="rate"></span></p>
                 <div id="star-main"></div>
-                <p id="disp-main"></p>
+                <p  id="disp-main"></p>
             </div>
         </div>
     </div>
     <div id="box">
-        <h1 id="pro">PRODUCTS</h1>
+        <h1 id="pro">Recipes</h1>
     </div>
 
 </body>
 <script type="application/javascript" src='./JS/data.json'></script>
 <script type="application/javascript" src='./JS/app.js'></script>
-
 </html>

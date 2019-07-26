@@ -102,6 +102,7 @@ body{
   color: darkcyan;
 }
 
+
 /* END OF GLOBAL SIDEPANEL */
 
 
@@ -114,11 +115,10 @@ body{
     padding-top: 20px;
 
 }
-
 #pro{
-  font-size: 60px;
-  margin:30px 0px 0px 20px;
-  font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin:30px 0px 0px 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .cardRow{
     display: flex;

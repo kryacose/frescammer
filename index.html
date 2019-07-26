@@ -10,61 +10,86 @@
 
 -->
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>frescammer</title>
-    <link rel="stylesheet" type="text/css" href="static/css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="static/js/slide.json"></script>
-    <script type="text/javascript" src="static/js/index.js"></script>
 
-  </head>
-  <body>
-    <div class="blur-background"></div>
+<head>
+  <meta charset="utf-8">
+  <title>frescammer</title>
+  <link rel="stylesheet" type="text/css" href="static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/slide.json"></script>
+  <script type="text/javascript" src="static/js/index.js"></script>
+
+</head>
+
+<body>
+  <!-- <div class="blur-background"></div> -->
 
 
-    <div class="container">
+  <div class="container">
     <div class="topnav">
-          <div>
-            <a href="#">
-                <img src="static/assets/logo.png" alt="Frescamer" class="logo">
-            </a>
-          <button class="openbtn" onclick="openNav()">☰</button>
+      <div>
+        <a href="#">
+          <img src="static/assets/logo.png" alt="Frescamer" class="logo">
+        </a>
+        <button class="openbtn" onclick="openNav()">☰</button>
 
-          </div>
-
-    </div>
-
-
-        <!--Each div with class "slides is each slide of the slideshow. It has two children, image and textbox." -->
-        <!-- To add more slides, follow the slides.json file instructions. -->
-
-    <div class="slides" id="slide1"></div>
-
-    <button class="scroll_btn display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button>
-
-
-
-    <div id="mySidepanel" class="sidepanel">
-              <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
-              <a href="#">Home</a>
-              <a href="product/index.html">Products</a>
-              <a href="#">Recipes</a>
-              <a href="#">Contact Us</a>
-              <a href="#">Services</a>
-              <a href="#">Store Finder</a>
-              <a href="template/gal.html">Gallery</a>
+      </div>
 
     </div>
+  </div>
 
-    <div class="botpanel">
-              About US<br> We make food <br> and juice<br> ALl rights Reserved <br> 2019
-    </div>
 
-    <script>
-      showDivs(0);  // To load the first image on page load. :)
-      timer = setInterval(function(){plusDivs(1)}, 10000);
-    </script>
-  </body>
+  <!--Each div with class "slides is each slide of the slideshow. It has two children, image and textbox." -->
+  <!-- To add more slides, follow the slides.json file instructions. -->
+
+  <div class="slides" id="slide1"></div>
+
+  <button class="scroll_btn display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+
+  <div id="mySidepanel" class="sidepanel">
+    <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
+    <a href="#">Home</a>
+    <a href="product/index.html">Products</a>
+    <a href="recipe/index.html">Recipes</a>
+    <a href="contact/contact.html">Contact Us</a>
+    <a href="#">Services</a>
+    <a href="#">Store Finder</a>
+    <a href="template/gal.html">Gallery</a>
+
+  </div>
+
+  <div class="botpanel">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <script>
+    showDivs(0);  // To load the first image on page load. :)
+    timer = setInterval(function () { plusDivs(1) }, 10000);
+  </script>
+  <div class="botpanel">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</body>
+
 </html>

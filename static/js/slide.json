@@ -1,9 +1,9 @@
 // Insert link of image and text below, as per given examples:
 slide = '[\
-        {"location" : "static/assets/food-background.jpg",\
-        "text" : "Welcome to Frescammer?"},\
-        {"location" : "https://i.ytimg.com/vi/4a2XxCi1DbM/maxresdefault.jpg",\
-        "text" : "Lamp had a little mary little mary little mary lamp had a little mary. Lamb had a little mary she was as white as sheeps."},\
-        {"location" : "https://i0.wp.com/wildwoodhealth.com/wp-content/uploads/2019/04/apple-pudding.jpg?w=1200&ssl=1",\
-        "text" : "Apple Pudding is Mango pudding but with Apples"}\
+        {"location" : "static/images/1.jpg",\
+        "text" : "Welcome to Frescammer"},\
+        {"location" : "static/images/2.jpeg",\
+        "text" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."},\
+        {"location" : "static/images/3.jpeg",\
+        "text" : "Frescamer dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}\
 ]';
