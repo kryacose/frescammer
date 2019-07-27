@@ -1,27 +1,24 @@
-body{
-    margin:0px;
+body {
+    margin: 0px;
 }
 
-
-#box{
+#box {
     display: block;
     background-color: white;
     position: relative;
     /* padding-bottom: 50px; */
     margin-top: 70px;
     padding-top: 20px;
-
 }
 
-
-#pro{
+#pro {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     margin-top: 30px;
 }
 
-#ppro{
+#ppro {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -29,22 +26,23 @@ body{
     font-size: 1.2em;
     margin-top: 20px;
 }
-.cardRow{
+
+.cardRow {
     justify-content: space-evenly;
     display: flex;
-    height: 300px;
+    height: fit-content;
     width: 100%;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top:30px;
-    margin-top: 40px;
-
+    top: 30px;
+    /* margin-top: 40px; */
 }
-.card{
+
+.card {
     height: 300px;
-    width:250px;
+    width: 250px;
     background-color: white;
     border-style: solid;
     border-width: thin;
@@ -55,15 +53,16 @@ body{
     transition: all 100ms;
     cursor: pointer;
 }
-#card-main{
-    display: none ;
+
+#card-main {
+    display: none;
     height: 50vw;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     position: fixed;
-    left:10vw;
-    top:90px;
+    left: 10vw;
+    top: 90px;
     z-index: 10;
     background-color: white;
     /* border-style: solid;
@@ -71,98 +70,108 @@ body{
     border-color: lightgrey; */
     box-shadow: 1px 1px 10px #777777, -1px 0px 10px #777777;
     /* overflow: scroll; */
-
     grid-template-rows: auto auto;
     grid-template-columns: auto;
-    grid-template-areas:
-        "box1 box2";
-
+    grid-template-areas: "box1 box2";
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 2px 2px 8px lightgrey, -2px -2px 8px lightgrey;
     /* height: 310px;
     width: 300px; */
-
 }
-.prodImg{
-    background-size:cover;
+
+.prodImg {
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width:cover;
-    height:200px;
+    width: cover;
+    height: 200px;
 }
-#prodImg-main{
+
+#prodImg-main {
     grid-area: box2;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 40vw;
-    height:50vw;
+    height: 50vw;
 }
-.prod{
-    width:cover;
-    height:150px;
+
+.prod {
+    width: cover;
+    height: 150px;
     border-radius: 0px 0px 10px 10px;
 }
-.prod-main{
+
+.prod-main {
     grid-area: box1;
-    width:40vw;
-    height:50vw;
+    width: 40vw;
+    height: 50vw;
     overflow: scroll;
 }
-.prodEtail{
+
+.prodEtail {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.prodEtail-main{
+
+.prodEtail-main {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+
 .checked {
-  color: orange;
+    color: orange;
 }
-p{
+
+p {
     margin: 0px;
 }
-.price{
+
+.price {
     font-size: 25px;
     color: green;
 }
-.price-main{
+
+.price-main {
     font-size: 25px;
     color: green;
 }
-.proName{
+
+.proName {
     font-size: 30px;
     font-family: 'Barlow', sans-serif;
     margin: 0px;
     margin-top: 10px;
     font-weight: bold;
 }
-#proName-main{
+
+#proName-main {
     font-size: 30px;
     font-family: 'Barlow', sans-serif;
     margin: 0px;
     margin-top: 10px;
     font-weight: bold;
 }
-#disp-main{
+
+#disp-main {
     text-align: justify;
     padding: 0px 30px;
     font-size: 1.2em;
     font-family: 'PT Sans Narrow', sans-serif;
 }
-#close{
+
+#close {
     width: 28px;
     height: 28px;
-    float:  right;
+    float: right;
     margin-right: 10px;
     margin-top: 10px;
     background-image: url("../../static/assets/close.png");
-    background-size:cover;
+    background-size: cover;
     /* background-color: black;
     border-radius: 50px; */
     /* opacity: 0.5; */
@@ -170,44 +179,43 @@ p{
     background-repeat: no-repeat;
     cursor: pointer;
 }
-#slide{
-    width:100%;
+
+#slide {
+    width: 100%;
     height: 500px;
     position: sticky;
-    top:0px;
+    top: 0px;
 }
-.slide{
-    width:100%;
+
+.slide {
+    width: 100%;
     height: 550px;
     margin-left: auto;
     margin-right: auto;
 }
-@media (max-width : 767px){
 
-    #pro{
+@media (max-width: 767px) {
+    #pro {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
         margin-top: 0px;
     }
-    
-    #ppro{
+    #ppro {
         padding-left: 20px;
         padding-right: 20px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1em;
         margin-top: 20px;
     }
-
-    .cardRow{
+    .cardRow {
         display: block;
         height: fit-content;
         margin: 0%;
     }
-
-    .card{
+    .card {
         height: 300px;
-        width:280px;
+        width: 280px;
         background-color: white;
         border-style: solid;
         border-width: thin;
@@ -218,43 +226,35 @@ p{
         transition: all 100ms;
         cursor: pointer;
     }
-
-
-    #prodImg-main{
-        background-size:cover;
+    #prodImg-main {
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width:100%;
-        height:cover;
+        width: 100%;
+        height: cover;
     }
-
-    .prod-main{
-        width:100%;
+    .prod-main {
+        width: 100%;
         height: fit-content;
         overflow: scroll;
         margin-bottom: 80px;
     }
-
-    #card-main{
-        
+    #card-main {
         display: none;
         height: 100%;
-        width:100%;
+        width: 100%;
         position: fixed;
         margin: 0;
         left: 0;
-        top:65px;
+        top: 65px;
         z-index: 10;
         background-color: white;
         /* border-style: solid;
         border-width: thin;
         border-color: lightgrey; */
-        grid-template-rows: auto ;
+        grid-template-rows: auto;
         grid-template-columns: auto auto;
-        grid-template-areas:
-            "box2"
-            "box1";    
+        grid-template-areas: "box2" "box1";
         overflow: scroll;
     }
-
 }
