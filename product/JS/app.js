@@ -4,7 +4,7 @@ let close = document.getElementById('close');
 let main = document.getElementById('box');
 
 
-close.addEventListener('click', ()=>{
+close.addEventListener('click', () => {
     mainCard.style.display = 'none';
 })
 
@@ -13,22 +13,22 @@ let len = products.length;
 let marker = 0;
 
 /* converting the data from json into document elements*/
-for (let i = 0; i<products.length; i+=4){
+for (let i = 0; i < products.length; i += 3) {
     let cardRow = document.createElement('div');
     cardRow.className = 'cardRow';
-    for(let j = i; j<i+4; j++){
-        if(marker < len){
+    for (let j = i; j < i + 3; j++) {
+        if (marker < len) {
 
             /* checking the star rating using the rating from the data */
             let rates = document.createElement('div');
             rates.className = 'star';
-            for(let i=0; i<5; i++){
+            for (let i = 0; i < 5; i++) {
                 let stars = document.createElement('span');
                 stars.classList.add('fa');
                 stars.classList.add('fa-star');
                 rates.appendChild(stars);
             }
-            for(let k=0; k<products[j].rating; k++){
+            for (let k = 0; k < products[j].rating; k++) {
                 rates.childNodes[k].classList.add('checked');
             }
 
@@ -36,7 +36,7 @@ for (let i = 0; i<products.length; i+=4){
             let card = document.createElement('div');
             card.className = "card";
             let prodImg = document.createElement('div');
-            prodImg.className ="prodImg";
+            prodImg.className = "prodImg";
             prodImg.style.backgroundImage = `url(${products[j].image})`;
             card.appendChild(prodImg);
             card.innerHTML += `<div class="prodEtail">
@@ -50,7 +50,7 @@ for (let i = 0; i<products.length; i+=4){
             card.childNodes[1].childNodes[5].innerHTML = rates.innerHTML;
 
             /* adding function for click response */
-            card.addEventListener('click', function(){
+            card.addEventListener('click', function() {
                 cardData = card.childNodes;
                 document.getElementById('prodImg-main').style.backgroundImage = cardData[0].style.backgroundImage;
                 document.getElementById('proName-main').innerText = cardData[1].childNodes[1].innerText;
@@ -61,8 +61,7 @@ for (let i = 0; i<products.length; i+=4){
             })
             cardRow.appendChild(card);
             marker++;
-        }
-        else{
+        } else {
             break;
         }
     }

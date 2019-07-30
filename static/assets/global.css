@@ -9,8 +9,9 @@ body {
 }
 
 .topnav {
-    z-index: 200;
-    background-color: darkcyan;
+    position: fixed;
+    z-index: 300;
+    /* background-color: darkcyan; */
     background-image: linear-gradient(to bottom right, #10bbb6, #20bfcf);
     width: 100%;
     height: auto;
@@ -62,7 +63,7 @@ body {
     opacity: 0.85;
     width: 0;
     position: fixed;
-    z-index: 201;
+    z-index: 301;
     height: 250px;
     top: 0;
     right: 0;
@@ -116,7 +117,8 @@ body {
     font-size: 0.7em;
     position: relative;
     bottom: 0px;
-    background-color: #333;
+    background-color: #060606;
+    opacity: 0.86;
     height: fit-content;
     display: block;
     text-align: center;
@@ -134,15 +136,17 @@ body {
 .tbox {
     /* position: absolute; */
     /* left: 20%; */
+    position: relative;
+    z-index: 98;
     text-align: center;
     margin-top: 50px;
     background-color: white;
     width: 85%;
-    box-shadow: 5px 5px 10px lightgrey, -5px 0px 10px lightgrey;
-    border-radius: 20px;
+    box-shadow: 1px 1px 5px 0px lightgrey inset, -1px -1px 5px 0px lightgrey inset;
+    border-radius: 10px;
     display: block;
     padding: 30px 30px;
-    margin: 50px auto 0px auto;
+    margin: 0px auto 0px auto;
 }
 
 .tbox h1 {
@@ -151,6 +155,7 @@ body {
 }
 
 .fab {
+    align-content: center;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
@@ -158,12 +163,25 @@ body {
     background-color: #10bbb6;
     height: fit-content;
     width: fit-content;
-    z-index: 50;
+    z-index: 99;
     border-radius: 50px;
-    padding: 15px 20px;
+    padding: 10px 20px;
     color: white;
     font-weight: bold;
+    font-size: 15px;
+    background-image: linear-gradient(to bottom right, #10bbb6, #20bfcf);
 }
+
+.fab p {
+    display: inline-block;
+    padding: 0;
+    margin: 5px 0px 5px 5px;
+}
+
+
+/* .fab i {
+    font-size: 20px;
+} */
 
 .text1 {
     grid-area: box2;
@@ -221,12 +239,28 @@ body {
     line-height: 2em;
 }
 
+.bannerImage {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    margin-bottom: -40px;
+    /* position: absolute;
+    top: 30px; */
+}
+
+.bannerImage img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    /* margin-bottom: -100px; */
+}
+
 
 /*MOBILE VIEW*/
 
 @media (max-width: 767px) {
     .topnav {
-        z-index: 50;
+        z-index: 300;
         width: 100%;
         height: 65px;
         padding: 0;
@@ -260,17 +294,16 @@ body {
         right: 10px;
     }
     .tbox {
-        /* position: absolute; */
-        /* left: 20%; */
+        position: relative;
+        z-index: 98;
         text-align: center;
         margin-top: 50px;
         background-color: white;
-        width: 90%;
-        box-shadow: 5px 5px 10px lightgrey, -5px 0px 10px lightgrey;
-        border-radius: 20px;
+        width: 88%;
+        /* box-shadow: 2px 2px 5px lightgrey, -2px 0px 5px lightgrey; */
         display: block;
         padding: 10px 10px;
-        margin: 50px auto 0px auto;
+        margin: -50px auto 0px auto;
     }
     .tbox h1 {
         margin-top: 20px;
