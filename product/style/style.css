@@ -57,20 +57,18 @@ body {
 
 #card-main {
     display: none;
-    height: 50vw;
+    height: 80vh;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
     position: fixed;
     left: 10vw;
     top: 90px;
-    z-index: 10;
+    z-index: 99;
     background-color: white;
     /* border-style: solid;
     border-width: thin;
     border-color: lightgrey; */
-    box-shadow: 1px 1px 10px #777777, -1px 0px 10px #777777;
-    /* overflow: scroll; */
+    box-shadow: 1px 1px 10px lightgrey, -1px -1px 10px lightgrey;
+    border-radius: 10px;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
     grid-template-areas: "box1 box2";
@@ -93,12 +91,15 @@ body {
 }
 
 #prodImg-main {
+    display: inline;
     grid-area: box2;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 40vw;
-    height: 50vw;
+    height: 80vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .prod {
@@ -183,11 +184,13 @@ p {
     cursor: pointer;
 }
 
-#slide {
-    width: 100%;
+
+/* #slide {
+    width: 60%;
     height: 500px;
     position: sticky;
     top: 0px;
+    margin: 0 auto;
 }
 
 .slide {
@@ -195,7 +198,7 @@ p {
     height: 550px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 @media (max-width: 767px) {
     #box {
@@ -221,7 +224,7 @@ p {
     }
     .card {
         height: 300px;
-        width: 85%;
+        width: 90%;
         background-color: white;
         border-style: solid;
         border-width: thin;
@@ -233,11 +236,11 @@ p {
         cursor: pointer;
     }
     #prodImg-main {
-        background-size: cover;
+        /* background-size: cover; */
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
-        height: cover;
+        width: 100vw;
+        height: 75vw;
     }
     .prod-main {
         width: 100%;
@@ -253,7 +256,7 @@ p {
         margin: 0;
         left: 0;
         top: 65px;
-        z-index: 10;
+        z-index: 100;
         background-color: white;
         /* border-style: solid;
         border-width: thin;
@@ -262,5 +265,6 @@ p {
         grid-template-columns: auto auto;
         grid-template-areas: "box2" "box1";
         overflow: scroll;
+        border-radius: 0;
     }
 }

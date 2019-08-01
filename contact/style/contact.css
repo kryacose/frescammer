@@ -1,8 +1,12 @@
 body,
 html {
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     margin: 0;
     width: 100%;
+}
+
+.container {
+    margin-top: 100px;
 }
 
 .row {
@@ -26,8 +30,10 @@ html {
 }
 
 .contact_info {
-    display: inline-block;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px lightgrey inset, -1px -1px 5px 0px lightgrey inset;
+    grid-area: box1;
     padding-left: 25px;
     padding-bottom: 25px;
     width: 40vw;
@@ -38,23 +44,66 @@ html {
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 50px; */
-    border-radius: 5px;
+    text-align: left;
+}
+
+.contact_info a {
+    text-decoration: none;
+    line-height: 20px;
+    color: black;
+}
+
+.contact_info i {
+    width: 25px;
+    font-size: 25px;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+.contact_info p {
+    line-height: 30px;
+    margin: 0;
+    display: inline-block;
 }
 
 .feedback {
-    height: fit-content;
+    margin: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px lightgrey inset, -1px -1px 5px 0px lightgrey inset;
+    grid-area: box2;
+    height: 565px;
+    /* max-height: 450px; */
+    overflow: hidden;
+    width: 40vw;
+    padding-top: 10px;
+    padding-left: -50px;
+    /* padding: 10px -100px; */
 }
 
 .order {
-    display: block;
-    grid-area: box3;
+    /* display: block; */
+    color: white;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 50px;
+    margin: 0 0;
+    background-image: linear-gradient(to bottom right, #10bbb6, #20bfcf);
+    border-radius: 50px;
 }
 
 .feedbackForm {
-    margin: 0;
+    margin-left: -50px;
+    padding: 0;
+    width: 40vw;
+    height: 450px;
 }
 
 @media (max-width: 767px) {
+    .container {
+        margin-top: 90px;
+    }
     .contact_us {
         font-size: 20px;
         width: 90%;
@@ -67,19 +116,30 @@ html {
         grid-template-columns: auto auto auto;
         grid-template-areas: "box0" "box3";
     }
+    .pair {
+        width: 100vw;
+    }
     .contact_info {
-        display: inline-block;
-        background-color: white;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
-        width: fit-content;
+        display: block;
+        /* background-color: white; */
+        width: 90vw;
+        height: fit-content;
         font-size: 22px;
         font-family: 'Montserrat', sans-serif;
         height: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-        border-radius: 5px;
+        padding: 0;
+        padding-bottom: 30px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+    }
+    .feedback {
+        /* margin-left: -6vw; */
+        background-color: transparent;
+        box-shadow: none;
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .order {
+        margin: 0 auto;
     }
 }

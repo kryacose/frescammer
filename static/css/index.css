@@ -59,21 +59,25 @@ html {
 
 .slides {
     position: relative;
-    width: 100%;
-    height: 101vh;
+    width: 80vw;
+    height: 80vh;
     /* Make this == "auto%" if you want to maintain aspect ratio and not to fill page */
     /* position: absolute; */
-    z-index: 100;
-    display: inline-block;
+    z-index: 98;
+    /* display: inline-block; */
     overflow: hidden;
-    margin-top: -4px;
+    margin-top: 100px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
     /* border-bottom-right-radius: 100px;
     border-bottom-left-radius: 20px; */
 }
 
 .slides>img {
     /* The slide image */
+    position: absolute;
     overflow: hidden;
     display: block;
     margin-left: auto;
@@ -85,24 +89,17 @@ html {
 
 .slides>div {
     /* The text box*/
-    background: rgba(15, 15, 15, 0.8);
-    font-family: 'Montserrat', sans-serif;
-    /* overflow: hidden; */
-    font-size: 25px;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 18px;
-    width: 100%;
-    height: auto;
-    /* min-height: auto; */
-    /* display: table-cell; */
-    z-index: 10;
     position: absolute;
     bottom: 0%;
-    margin-left: auto;
-    margin-right: auto;
+    background: rgba(15, 15, 15, 0.8);
+    font-size: 15px;
+    color: white;
+    width: 79vw;
+    height: fit-content;
+    z-index: 10;
     text-align: center;
     transition: ease-in 100ms;
+    padding: 8px 8px;
 }
 
 
@@ -128,7 +125,7 @@ html {
     margin-bottom: auto;
     transition: ease-in 100ms;
     font-size: 1.8em;
-    top: 50%;
+    top: 35%;
 }
 
 .scroll_btn:hover {
@@ -137,7 +134,7 @@ html {
 }
 
 .display-left {
-    left: 0px;
+    left: 10vw;
     margin-left: 0px;
 }
 
@@ -149,10 +146,16 @@ html {
 
 .display-right {
     margin-right: 0px;
-    right: 0px;
+    right: 10vw;
 }
 
 @media (max-width: 767px) {
+    .display-left {
+        left: 0;
+    }
+    .display-right {
+        right: 0;
+    }
     .slides {
         width: 100%;
         height: 50%;
@@ -181,14 +184,14 @@ html {
         position: absolute;
         background: rgba(15, 15, 15, 0.8);
         /* overflow: hidden; */
-        font-size: 1.2em;
+        font-size: 10px;
         color: white;
         width: 100%;
         height: fit-content;
+        padding: 4px 8px;
         /* min-height: auto; */
         /* display: table-cell; */
         z-index: 10;
-        position: inherit;
         /* bottom: 11%; */
         text-align: center;
         transition: ease-in 100ms;
