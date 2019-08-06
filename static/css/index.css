@@ -119,6 +119,7 @@ html {
     height: 50px;
     width: 50px;
     background: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     color: white;
     border: 0px solid black;
     margin-top: auto;
@@ -202,6 +203,7 @@ html {
         height: 50px;
         width: 50px;
         background: rgba(0, 0, 0, 0.5);
+        background-color: transparent;
         color: white;
         border: 0px solid black;
         margin-top: auto;

@@ -3,7 +3,7 @@
 body {
     margin: 0%;
     width: 100%;
-    font-family: 'Roboto', serif;
+    font-family: 'Proza Libre', sans-serif;
     background-image: url('./bg.png');
     background-color: transparent;
     /* opacity: 10%; */
@@ -191,13 +191,13 @@ body {
     font-size: 20px;
 } */
 
-.cursive{
-    font-family:'Pacifico', cursive;
+#cursive{
+    font-family: 'Cormorant Garamond', serif;
 }
 .text1 {
     grid-area: box2;
     text-align: left;
-    font-size: 0.8em;
+    font-size: 0.85em;
     padding: 0;
     margin: 0 0 0 20px;
 }
@@ -268,6 +268,8 @@ body {
 }
 
 
+
+
 /*MOBILE VIEW*/
 
 @media (max-width: 767px) {
@@ -304,7 +306,11 @@ body {
     .fab {
         bottom: 10px;
         right: 10px;
-    }
+            }
+    
+    .hidden {
+        display: none;
+    }        
     .tbox {
         position: relative;
         z-index: 98;
@@ -344,6 +350,10 @@ body {
     .footerLinks {
         text-align: center;
         width: 100vw;
+
+    }
+    .footer {
+        margin-top: 20px;
     }
     .footerDetails {
         text-align: center;
