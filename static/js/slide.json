@@ -1,9 +1,9 @@
 // Insert link of image and text below, as per given examples:
 slide = '[\
         {"location" : "static/images/1.jpg",\
-        "text" : "Welcome to Frescamer"},\
+        "text" : "Welcome to Frescammer"},\
         {"location" : "static/images/2.jpeg",\
-        "text" : "Historically, humans secured food through two methods: hunting and gathering and agriculture."},\
+        "text" : "Stay Clean, Stay Green"},\
         {"location" : "static/images/3.jpeg",\
-        "text" : "Since early times, farmers, fishermen, and trappers have preserved grains and produce in unheated buildings during the winter season."}\
+        "text" : "Safe and reliable"}\
 ]';
