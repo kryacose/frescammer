@@ -51,6 +51,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 40px;
+    padding-bottom: 20px;   
     transition: all 100ms;
     cursor: pointer;
 }
