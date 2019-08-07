@@ -9,7 +9,13 @@ html {
     height: 100%;
     position: relative;
 }
-
+.topnav{
+    padding-top: 10px;
+    padding-bottom: 
+}
+.openbtn{
+    padding-top: 10px;
+}
 .blur-background {
     background-color: black;
     opacity: 0.4;
