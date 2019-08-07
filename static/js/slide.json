@@ -7,7 +7,7 @@ slide = '[\
         {"location" : "static/images/3-min.jpeg",\
         "text" : "Safe and reliable"},\
         {"location" : "static/images/5-min.jpg",\
-            "text" : "Safe and reliable"},\
+            "text" : "100% Healthy"},\
         {"location" : "static/images/6-min.jpg",\
             "text" : "Quality Assured"}\
 ]';
