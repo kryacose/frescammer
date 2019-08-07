@@ -1,37 +1,49 @@
 data = '[{\
-    "name" : "product 1",\
-    "image" : "./images/download_1.jpg",\
-    "price" : "1000",\
-    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."\
+    "name" : "Curry Cuts",\
+    "image" : "./images/squid_rings-min.jpg",\
+        "price" : "1000",\
+    "description" : "These fully cleaned and cut pieces are just waiting to be picked up and made into a variety of mouth-watering dishes.\\nTuna: Packed with healthy proteins and omega 3 fatty acids, the tuna is also considered a delicacy and is widely used to make steaks and sushi.\\nSwordfish: Swordfish is a particularly popular fish for cooking. Since swordfish are large, their meat is usually sold as steaks, which are often grilled."\
 },\
 {\
-    "name" : "product 2",\
-    "image" : "./images/download_2.jpg",\
+    "name" : "Pan Fry",\
+    "image" : "./images/leather_jacket-min.JPG",\
     "price" : "2000",\
-    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."\
+    "description" : "Fire up your taste buds and enjoy the most delightful delicacies with these fully cleaned and ready to fry pieces.\\nLeather Jacket: Leather Jacket has become common at the market recently, with the advent of large scale fish farming. This fish has a mild, oily taste similar to Spanish mackerel or Bluefish.\\nRed mullet: The Red mullet, is known for its high levels of omega-3 fatty acids, iodine, iron and phosphorus and is as healthy as it is delicious.\\nAnchovy: Anchovy are used in small quantities to flavor a variety of dishes. Because of the strong flavor, they are also an ingredient in several sauces and condiments."\
 },\
 {\
-    "name" : "product 3",\
+    "name" : "Steaks",\
     "image" : "./images/download_3.jpg",\
     "price" : "3000",\
-    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."\
+    "description" : "Savour the taste of boneless supreme tuna steaks with effortless preparation and without worry of the pricking of fish bones. "\
 },\
 {\
-    "name" : "product 4",\
-    "image" : "./images/download_2.jpg",\
+    "name" : "Squid Rings",\
+    "image" : "./images/squid_rings-min.jpg",\
     "price" : "4000",\
-    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."\
+    "description" : "Squid that has been cut into rings and fully cleaned out just for you. Put these into the frying pan to make the crispiest squid rings for you to bite into. "\
 },\
 {\
-    "name" : "product 5",\
+    "name" : "Shrimps",\
     "image" : "./images/download_3.jpg",\
     "price" : "5000",\
-    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."\
+    "description" : "Cleaned out and peeled off, all you have to do is cook these soft and crunchy shrimps to make the most delicious dish!"\
 },\
 {\
-    "name" : "product 6",\
+    "name" : "Clams",\
     "image" : "./images/download_1.jpg",\
     "price" : "6000",\
-    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."\
+    "description" : "These cleaned and ready to cook clams are so good that once cooked they’ll simply melt in your mouth."\
+},\
+{\
+    "name" : "Kid\'s Menu",\
+    "image" : "./images/download_1.jpg",\
+    "price" : "6000",\
+    "description" : "Make the best dishes and healthiest meals with our assorted range of seafood items, especially for the youngsters to enjoy.\\nThe rich omega-3 oils, high protein content and low fat also make seafood one of  the healthiest dishes to relish.\\nFish Fingers: These ready to fry fish fingers are just waiting to be put onto the frying pan, and a single bite is sure to make anyone ask for more.\\nFish Steaks: Boneless and delicious, our fish steaks make the perfect treat for every kid."\
+},\
+{\
+    "name" : "Pickles",\
+    "image" : "./images/download_1.jpg",\
+    "price" : "6000",\
+    "description" : "The tastiest fish pickles made in the healthiest way!\\nThese homemade pickles are all made from the very best ingredients that are specially selected to provide great flavour."\
 }\
 ]';
