@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
@@ -39,7 +40,9 @@
 
     <div class="container">
         <div class="fab">
-            <a href="contact/"><i class="fa fa-phone" aria-hidden="true"></i><p class="hidden"></p></a>
+            <a href="contact/"><i class="fa fa-phone" aria-hidden="true"></i>
+                <p class="hidden"></p>
+            </a>
         </div>
         <div class="topnav">
             <div>
@@ -69,7 +72,6 @@
             <a href="product/">Products</a>
             <a href="recipe/">Recipes</a>
             <a href="contact/">Contact Us</a>
-            <a href="services/">Services</a>
             <a href="#">Store Finder</a>
             <a href="gallery/">Gallery</a>
 
@@ -85,7 +87,7 @@
 
 
 
-        <div class="tbox">
+        <div class="tbox" data-aos="fade-up" data-aos-duration="2000">
             <div class="bootstrap-iso pair">
                 <div class="row ">
                     <div class="card-deck">
@@ -108,40 +110,37 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <br><br><br>
+        <div class="tbox" data-aos="fade-up" data-aos-duration="2000">
             <h1 id="cursive">About Us</h1>
             <div class="pair">
                 <img src="./static/images/ab.jpg" style="width:350px; height: 250px;" class="img1">
                 <p class="text1">We at Frescamer believe that each and every one of you deserve the very best when it comes to flavour, freshness and quality. World class facilities process and preserve the seafood so as to ensure that each of our products are export
                     quality, which is the best quality of food you’ll find in the market. Strict quality control measures are followed including HACCP regulations while processing, and quick freezing to retain freshness.
-
                 </p>
-
             </div>
         </div>
         <div class="footer">
             <div class="pair">
-                <div class="footerLinks">
-                    <h3>LINKS</h3><br>
-                    <a href="#">Home</a><br>
-                    <a href="product/">Products</a><br>
-                    <a href="recipe/">Recipes</a><br>
-                    <a href="contact/">Contact Us</a><br>
-                    <a href="services/">Services</a><br>
-                    <a href="#">Store Finder</a><br>
-                    <a href="gallery/">Gallery</a><br><br>
-                </div>
-                <div class="footerDetails">
+                <div class="footerDetails" style="grid-area: box1; text-align:center; margin: 10px auto;">
                     <h3>ADDRESS</h3><br>
                     <p>dolore magna aliqua<br>minim veniam<br>consectetur<br><br><br></p>
-                    <h3>CONTACT US</h3><br>
-                    <p>dolore magna aliqua<br>minim veniam<br>consectetur<br><br></p>
+                </div>
+                <div class="footerDetails" style="grid-area: box2; text-align:center; margin: 10px auto;">
+                    <h3>CONTACT</h3><br>
+                    <p>dolore magna aliqua<br>minim veniam<br>consectetur<br><br><br></p>
                 </div>
             </div>
-            Frescamer | Powered by Excel 2019</div>
+            Frescamer | Powered by Excel 2019
+        </div>
 
 
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
