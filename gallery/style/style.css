@@ -63,9 +63,9 @@ body {
 #cardMain {
     height: 560px;
     width: 80%;
-    position:fixed;
-    top:100px;
-    left:50%;
+    position: fixed;
+    top: 100px;
+    left: 50%;
     z-index: 10;
     background-color: white;
     border-style: solid;
@@ -76,7 +76,6 @@ body {
     transition: all 100ms;
     border-radius: 10px;
 }
-
 
 #close {
     width: 28px;
@@ -139,7 +138,7 @@ p {
 
 .proName {
     font-size: 30px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Proza Libre', sans-serif;
     margin: 0px;
     margin-top: 10px;
     font-weight: bold;
