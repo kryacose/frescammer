@@ -28,7 +28,7 @@ for (let i = 0; i < products.length; i += 3) {
             card.appendChild(prodImg);
             card.innerHTML += `<div class="prodEtail">
                                     <p class="proName">${products[j].name}</p>
-                                    <p class="price">&#8377 <span style="font-size: 30px;">${products[j].price}</span></p>
+                                    <p class="price"> <span style="font-size: 30px;"></span></p>
                                     <p style='display: none' class="disp">${products[j].description}</p>
                                 </div>`
 
