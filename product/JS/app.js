@@ -28,16 +28,16 @@ for (let i = 0; i < products.length; i += 3) {
             card.appendChild(prodImg);
             card.innerHTML += `<div class="prodEtail">
                                     <p class="proName">${products[j].name}</p>
-                                    <p class="price">&#8377 <span style="font-size: 30px;">${products[j].price}</span></p>
+                                    <p class="price"><span style="font-size: 30px;"></span></p>
                                     <p style='display: none' class="disp">${products[j].description}</p>
                                 </div>`
-
+            /* ${products[j].price} &#8377 */
             /* adding function for click response */
             card.addEventListener('click', function() {
                 cardData = card.childNodes;
                 document.getElementById('prodImg-main').style.backgroundImage = cardData[0].style.backgroundImage;
                 document.getElementById('proName-main').innerText = cardData[1].childNodes[1].innerText;
-                document.getElementById('rate').innerText = cardData[1].childNodes[3].childNodes[1].innerText;
+                //document.getElementById('rate').innerText = cardData[1].childNodes[3].childNodes[1].innerText;
                 document.getElementById('disp-main').innerText = cardData[1].childNodes[5].innerText;
                 mainCard.style.display = 'grid';
             })

@@ -134,11 +134,13 @@ body {
     padding: 0;
     margin: 0;
 }
-.container-fluid{
+
+.container-fluid {
     position: relative;
     z-index: 98;
     width: 75vw;
 }
+
 .tbox {
     /* position: absolute; */
     /* left: 20%; */
@@ -195,11 +197,12 @@ body {
     font-size: 20px;
 } */
 
-#cursive{
-    padding-top: 0;   
-    font-family: 'Cormorant Garamond', serif;
+#cursive {
+    padding-top: 0;
+    font-family: 'Cormorant Garamond', serif, 700;
     font-size: 1.9em;
 }
+
 .text1 {
     grid-area: box2;
     text-align: left;
@@ -274,8 +277,6 @@ body {
 }
 
 
-
-
 /*MOBILE VIEW*/
 
 @media (max-width: 767px) {
@@ -312,11 +313,10 @@ body {
     .fab {
         bottom: 10px;
         right: 10px;
-            }
-    
+    }
     .hidden {
         display: none;
-    }        
+    }
     .tbox {
         position: relative;
         z-index: 98;
@@ -356,7 +356,6 @@ body {
     .footerLinks {
         text-align: center;
         width: 100vw;
-
     }
     .footer {
         margin-top: 20px;
