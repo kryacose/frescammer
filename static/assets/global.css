@@ -148,6 +148,7 @@ body {
 .tbox {
     /* position: absolute; */
     /* left: 20%; */
+    background-image: url(./navbg.png);
     position: relative;
     z-index: 98;
     text-align: center;

@@ -1,8 +1,8 @@
 // Insert link of image and text below, as per given examples:
 slide = '[\
-        {"location" : "static/images/s1.jpg",\
-        "text" : "Welcome to Frescammer"},\
-        {"location" : "static/images/s2.jpg",\
+        {"location" : "static/assets/s1.jpg",\
+        "text" : "Welcome to Frescamer"},\
+        {"location" : "static/assets/s2.jpg",\
         "text" : "Stay Clean, Stay Green"},\
         {"location" : "static/images/s3.jpg",\
         "text" : "Safe and reliable"},\
