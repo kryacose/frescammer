@@ -282,6 +282,11 @@ body {
     /* margin-bottom: -100px; */
 }
 
+.card img:hover {
+    transform: scale(1.25);
+    filter: grayscale(100%);
+}
+
 
 /*MOBILE VIEW*/
 
@@ -364,8 +369,8 @@ body {
         text-align: center;
         width: 100vw;
     }
-    #mobi{
-        display: none ;
+    #mobi {
+        display: none;
     }
     .footer {
         margin-top: 20px;
