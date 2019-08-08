@@ -13,7 +13,7 @@ body {
     position: fixed;
     z-index: 300;
     /* background-color: darkcyan; */
-    background-image: linear-gradient(to bottom right, #10bbb6, #20bfcf);
+    background-image: url(navbg.png), linear-gradient(to bottom right, #10bbb6, #20bfcf);
     width: 100%;
     height: auto;
     padding: 4px 0px 0px 0px;
@@ -133,6 +133,10 @@ body {
     font-size: 25px;
     padding: 0;
     margin: 0;
+}
+
+.footer a:hover {
+    color: #20bfcf;
 }
 
 .container-fluid {
