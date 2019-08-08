@@ -1,6 +1,6 @@
 data = '[{\
     "name" : "Curry Cuts",\
-    "image" : "./images/squid_rings-min.jpg",\
+    "image" : "./images/currycuts.jpg",\
         "price" : "1000",\
     "description" : "These fully cleaned and cut pieces are just waiting to be picked up and made into a variety of mouth-watering dishes.\\nTuna: Packed with healthy proteins and omega 3 fatty acids, the tuna is also considered a delicacy and is widely used to make steaks and sushi.\\nSwordfish: Swordfish is a particularly popular fish for cooking. Since swordfish are large, their meat is usually sold as steaks, which are often grilled."\
 },\

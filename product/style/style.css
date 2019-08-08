@@ -111,7 +111,7 @@ body {
 .prod-main {
     grid-area: box1;
     width: 40vw;
-    height: 50vw;
+    height: 80vh;
     overflow: scroll;
 }
 
