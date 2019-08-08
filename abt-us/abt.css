@@ -1,0 +1,40 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+html {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+}
+
+.con {
+    margin: 0;
+    padding-top: 100px;
+    width: 100vw;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .con {
+        padding-top: 130px;
+    }
+    #second {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pair img {
+        width: 88vw;
+    }
+    .t1 {
+        margin: 0;
+    }
+    .text-center {
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+}
