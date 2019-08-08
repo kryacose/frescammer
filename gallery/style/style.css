@@ -189,6 +189,9 @@ p {
         font-size: 1.1em;
         margin-top: 20px;
     }
+    #mobi{
+        display: none;
+    }
     .cardRow {
         display: block;
         height: fit-content;

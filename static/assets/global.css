@@ -363,6 +363,9 @@ body {
         text-align: center;
         width: 100vw;
     }
+    #mobi{
+        display: none ;
+    }
     .footer {
         margin-top: 20px;
     }
