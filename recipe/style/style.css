@@ -62,7 +62,7 @@ body {
 
 #card-main {
     display: none;
-    height: 50vw;
+    height: 80vh;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -103,7 +103,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 40vw;
-    height: 50vw;
+    height: 80vh;
 }
 
 .prod {
@@ -115,7 +115,7 @@ body {
 .prod-main {
     grid-area: box1;
     width: 40vw;
-    height: 50vw;
+    height: 80vh;
     overflow: scroll;
 }
 
@@ -150,11 +150,11 @@ p {
 }
 
 .proName {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Proza Libre', sans-serif;
     margin: 0px;
     margin-top: 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #proName-main {
@@ -167,7 +167,7 @@ p {
 
 #disp-main {
     text-align: justify;
-    padding: 0px 30px;
+    padding: 0px 30px 50px 30px;
     font-size: 1.2em;
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -219,6 +219,9 @@ p {
         font-size: 1.1em;
         margin-top: 20px;
     }
+    #mobi{
+        display: none;
+    }
     .cardRow {
         display: block;
         height: fit-content;
@@ -258,7 +261,7 @@ p {
         margin: 0;
         left: 0;
         top: 65px;
-        z-index: 10;
+        z-index: 99;
         background-color: white;
         /* border-style: solid;
         border-width: thin;
@@ -267,5 +270,6 @@ p {
         grid-template-columns: auto auto;
         grid-template-areas: "box2" "box1";
         overflow: scroll;
+        /* margin-bottom: 20px; */
     }
 }

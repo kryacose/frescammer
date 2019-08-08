@@ -111,7 +111,7 @@ body {
 .prod-main {
     grid-area: box1;
     width: 40vw;
-    height: 50vw;
+    height: 80vh;
     overflow: scroll;
 }
 
@@ -216,6 +216,10 @@ p {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1em;
         margin-top: 20px;
+    }
+    
+    #mobi{
+           display: none;
     }
     .cardRow {
         display: block;

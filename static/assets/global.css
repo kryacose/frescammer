@@ -148,6 +148,7 @@ body {
 .tbox {
     /* position: absolute; */
     /* left: 20%; */
+    background-image: url(./navbg.png);
     position: relative;
     z-index: 98;
     text-align: center;
@@ -213,14 +214,15 @@ body {
     font-size: 1em;
     padding: 0;
     margin: 0 0 0 20px;
+    line-height: 2em;
 }
 
 .img1 {
     grid-area: box1;
-    width: 42vw;
+    width: 30vw;
     height: auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .pair {
@@ -348,6 +350,7 @@ body {
         font-size: 1em;
         padding: 0 20px 20px 20px;
         margin: 0%;
+        line-height: 1.5em;
     }
     .img1 {
         grid-area: box1;
@@ -360,6 +363,9 @@ body {
     .footerLinks {
         text-align: center;
         width: 100vw;
+    }
+    #mobi{
+        display: none ;
     }
     .footer {
         margin-top: 20px;
