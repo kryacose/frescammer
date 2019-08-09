@@ -147,6 +147,7 @@ p {
 .price-main {
     font-size: 25px;
     color: green;
+    display: none;
 }
 
 .proName {

@@ -13,7 +13,7 @@ body {
     position: fixed;
     z-index: 300;
     /* background-color: darkcyan; */
-    background-image: url(navbg3.png);
+    background-image: url(navbg4.png);
     width: 100%;
     height: 94px;
     padding: 3.978px 0px 0px 0px;
@@ -291,6 +291,43 @@ body {
     background-color: #10bbb6 !important;
 }
 
+.navbar-inline li {
+    display: inline;
+    font-size: 20px;
+    /* border-right: 2px solid white; */
+    padding-right: 20px;
+}
+
+.navbar-inline li:last-child {
+    border-right: none;
+    padding-right: none;
+}
+
+.navbar-inline ul:last-child {
+    float: right;
+}
+
+.navbar-inline {
+    display: inline;
+    position: relative;
+}
+
+.navbar-inline ul {
+    margin: 0%;
+    font-size: 40px;
+    padding-right: 1%;
+}
+
+.navbar-inline a {
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.hidebtn {
+    display: none;
+}
+
 
 /*MOBILE VIEW*/
 
@@ -384,5 +421,14 @@ body {
         text-align: center;
         width: 100vw;
         margin: 10px auto;
+    }
+}
+
+@media (max-width:890px) {
+    .navbar-inline {
+        display: none;
+    }
+    .hidebtn {
+        display: block;
     }
 }
