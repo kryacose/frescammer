@@ -7,7 +7,7 @@ body {
     /* background-color: white; */
     position: relative;
     /* padding-bottom: 50px; */
-    margin-top: 70px;
+    margin-top: 120px;
     padding-top: 20px;
 }
 
@@ -189,7 +189,7 @@ p {
         font-size: 1.1em;
         margin-top: 20px;
     }
-    #mobi{
+    #mobi {
         display: none;
     }
     .cardRow {
