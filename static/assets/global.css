@@ -13,9 +13,11 @@ body {
     position: fixed;
     z-index: 300;
     /* background-color: darkcyan; */
-    background-image: url(navbg4.png);
+    background-image: url(waves2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 94px;
+    height: 100px;
     padding: 3.978px 0px 0px 0px;
     position: fixed;
     top: 0%;
@@ -356,7 +358,7 @@ body {
     .topnav {
         z-index: 300;
         width: 100%;
-        height: 100px;
+        height: 90px;
         padding: 0;
     }
     .logo {
@@ -454,5 +456,11 @@ body {
     }
     .hidebtn {
         display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .topnav {
+        background-image: url(waves3.png);
     }
 }
