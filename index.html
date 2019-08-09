@@ -1,87 +1,135 @@
 <!DOCTYPE html>
-<!-- MEC Project -->
+<!-- MEC Project
+    Instructions:
+    Add the link or image directory (with respect to this html file) in the slides.json
+    file as per the default examples given.
+    Make sure you add a "\" to the end of the line in json for multiline string.
+-->
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <title>frescammer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/assets/global.css">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap-iso.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat|PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="static/js/slide.json"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
+    <script type="text/javascript" src="./static/js/nav.js"></script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
-
-    <link rel="stylesheet" type="text/css" href="../static/assets/global.css">
-    <link rel="stylesheet" type="text/css" href="./style/services.css">
-    <script type="application/javascript" src='../static/js/nav.js'></script>
-  
 </head>
 
-<body>
-    <div class="con">
+<body style="background-image: url(./static/assets/fresbg2.jpg">
+    <!-- <div class="blur-background"></div> -->
+
+
+    <div class="container">
         <div class="fab">
-            <a href="contact/"><i class="fa fa-phone" aria-hidden="true"></i><p>  Contact Us</p></a>
+            <a href="contact/"><i class="fa fa-phone" aria-hidden="true"></i>
+                <p id= "mobi" >Contact Us</p>
+            </a>
         </div>
         <div class="topnav">
             <div>
-                <a href="#">
-                    <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
+                <a href="">
+                    <img src="static/assets/logo.png" alt="Frescamer" class="logo">
                 </a>
                 <button class="openbtn" onclick="openNav()">☰</button>
 
             </div>
 
         </div>
+
+
+        <!--Each div with class "slides is each slide of the slideshow. It has two children, image and textbox." -->
+        <!-- To add more slides, follow the slides.json file instructions. -->
+
+        <div class="slides" id="slide1"></div>
+
+        <button class="scroll_btn display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+
         <div id="mySidepanel" class="sidepanel">
             <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
-            <a href="../">Home</a>
-            <a href="../product/">Products</a>
-            <a href="../recipe/">Recipes</a>
-            <a href="../contact/">Contact Us</a>
-            <a href="../services/">Services</a>
-            <a href="#">Store Finder</a>
-            <a href="../gallery/">Gallery</a>
+            <a href="">Home</a>
+            <a href="product/">Products</a>
+            <a href="recipe/">Recipes</a>
+            <a href="contact/">Contact Us</a>
+            <a href="gallery/">Gallery</a>
 
         </div>
 
 
-        <div class="tbox  ">
-<h1> <b>We are Frescamer </b>
-</h1>
+        <script>
+            showDivs(0); // To load the first image on page load. :)
+            timer = setInterval(function() {
+                plusDivs(1)
+            }, 5000);
+        </script>
 
-<div class="row">
-	
-  
-  <div class="col-sm-8">We at Frescamer believe that each and every one of you deserve the very best when it comes to flavour, freshness and quality. World class facilities process and preserve the seafood so as to ensure that each and every one of our products are export quality, which is the best quality of food you would find in the market. 
-Strict quality control measures are followed including HACCP regulations while processing, as well as quick freezing for the seafood to retain freshness. With our fully cleaned out and cut pieces, all you need to do is throw them onto the frying pan, sprinkle some herbs and simply relish the assorted and wondrous flavours of the ocean.
-<br><br>
-From ready to prepare curry cuts, delicious and juicy fish steaks, to crunchy squid rings, if you consider yourself a connoisseur of fine dishes, especially of seafood, then rest assured, Frescamer is your next favorite chef.
-</div>
-  <div class="col-sm-2" ><img src="http://www.smarthubli.com/admin/cate/4.jpg" alt="" ></div>
- 
-</div>
-        </div>
 
-        <div class=footer>
-            <div class="pair ">
-                <div class="footerLinks ">
-                    <h3>LINKS</h3><br>
-                    <a href="../ ">Home</a><br>
-                    <a href="../product/ ">Products</a><br>
-                    <a href="../recipe/ ">Recipes</a><br>
-                    <a href="../contact/ ">Contact Us</a><br>
-                    <a href="../services/ ">Services</a><br>
-                    <a href="# ">Store Finder</a><br>
-                    <a href="../gallery/ ">Gallery</a><br><br>
-                </div>
-                <div class="footerDetails ">
-                    <h3>ADDRESS</h3><br>
-                    <p>dolore magna aliqua<br>minim veniam<br>consectetur<br><br><br></p>
-                    <h3>CONTACT US</h3><br>
-                    <p>dolore magna aliqua<br>minim veniam<br>consectetur<br><br></p>
+
+        <div class="tbox" data-aos="fade-up" data-aos-duration="2000">
+            <div class="bootstrap-iso pair">
+                <div class="row ">
+                    <div class="card-deck">
+                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/1.png" width="90" height="90" />
+                            <h1 id="cursive">Stay Clean, Stay Green</h1>
+                            Sustainable and eco-friendly practices are used in order to minimise the impact on the environment.
+                        </div>
+                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/2.png" width="90" height="90" />
+                            <h1 id="cursive">Safe and reliable</h1>
+                            The food we bring to your plates is packaged in 100% tried and tested food grade packaging. The food grade plastics used keep the contents fresh and delicious.
+                        </div>
+                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/3.png" width="90" height="90" />
+                            <h1 id="cursive">Quality Assured</h1>
+                            Each and every seafood product marketed at Frescamer undergoes strict lab tests to ensure the highest quality. Quick freezing helps prevent bacterial growth and retain freshness.
+                        </div>
+                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 30px 0px;"><img src="./static/images/4.png" width="90" height="90" />
+                            <h1 id="cursive">100% Healthy</h1>
+                            HACCP regulations are followed while processing the seafood to provide a clean environment and to make sure every product is 100% free of impurities.
+                        </div>
+                    </div>
                 </div>
             </div>
-            Frescamer | Powered by Excel 2019</div>
+        </div>
+        <br><br><br>
+        <div class="footer">
+            <div class="pair">
+                <div class="footerDetails" style="grid-area: box1; text-align:center; margin: 10px auto;">
+                    <h3>ADDRESS</h3><br>
+                    <p>Rajkamal Palakal,<br>Nettepadam lane,<br>Kochi-682016<br>Kerala, India<br><br><br></p>
+                </div>
+                <div class="footerDetails" style="grid-area: box2; text-align:center; margin: 10px auto;">
+                    <h3>CONTACT</h3><br>
+                    <a href="tel:+9865327410" style="text-decoration: none;color: white; font-family: inherit; font-size: 19px;"><i class="fa fa-phone"
+                        aria-hidden="true"></i> 9865327410</a><br><br>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@frescamer.com" style="text-decoration: none;color: white; font-family: inherit; font-size: 19px;"><i class="fa fa-envelope"
+                        aria-hidden="true"></i>  info@frescamer.com</a><br><br><br></p>
+                </div>
+            </div>
+            Frescamer | Powered by Excel 2019
+        </div>
+
+
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
