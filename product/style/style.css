@@ -61,7 +61,7 @@ body {
     width: fit-content;
     position: fixed;
     left: 10vw;
-    top: 90px;
+    top: 110px;
     z-index: 99;
     background-color: white;
     /* border-style: solid;
@@ -98,8 +98,8 @@ body {
     background-repeat: no-repeat;
     width: 40vw;
     height: 80vh;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .prod {
@@ -258,8 +258,8 @@ p {
         position: fixed;
         margin: 0;
         left: 0;
-        top: 65px;
-        z-index: 100;
+        top: 70px;
+        z-index: 400;
         background-color: white;
         /* border-style: solid;
         border-width: thin;

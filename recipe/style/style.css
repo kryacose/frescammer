@@ -68,7 +68,7 @@ body {
     margin-right: auto;
     position: fixed;
     left: 10vw;
-    top: 90px;
+    top: 110px;
     z-index: 100;
     background-color: white;
     /* border-style: solid;
@@ -261,8 +261,8 @@ p {
         position: fixed;
         margin: 0;
         left: 0;
-        top: 65px;
-        z-index: 99;
+        top: 70px;
+        z-index: 400;
         background-color: white;
         /* border-style: solid;
         border-width: thin;

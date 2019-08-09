@@ -282,6 +282,15 @@ body {
     /* margin-bottom: -100px; */
 }
 
+.overlay {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    opacity: 0.70;
+    z-index: 2;
+}
+
 .card img:hover {
     transform: scale(1.25);
     filter: grayscale(100%);
@@ -326,6 +335,18 @@ body {
 
 .hidebtn {
     display: none;
+}
+
+
+/* Centered text */
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 200%;
 }
 
 
@@ -422,9 +443,12 @@ body {
         width: 100vw;
         margin: 10px auto;
     }
+    .centered {
+        font-size: 100%;
+    }
 }
 
-@media (max-width:890px) {
+@media (max-width:1007px) {
     .navbar-inline {
         display: none;
     }
