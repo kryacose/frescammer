@@ -15,7 +15,7 @@
 
     if (n >= count) {slideIndex = 0}
     if (n < 0) {slideIndex = count - 1}
-    $(".slides").html('<img class="slide_image" src="' + slides[slideIndex].location + '"> <div class=\"slide_textbox\">"' + slides[slideIndex].text + '"</div>');
+    $(".slides").html('<img class="slide_image" src="' + slides[slideIndex].location + '">"');
     $(".blur-background").css("background-image", "url('"+ slides[slideIndex].location + "') ") ;
     //x[slideIndex-1].style.display = "block";
 
