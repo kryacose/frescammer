@@ -26,9 +26,16 @@ for (let i = 0; i < products.length; i += 3) {
             prodImg.className = "prodImg";
             prodImg.style.backgroundImage = `url(${products[j].image})`;
             card.appendChild(prodImg);
+            let overlayImg = document.createElement('div');
+            overlayImg.className = "overlayImg";
+            prodImg.appendChild(overlayImg);
+            let overlayTxt = document.createElement('div');
+            overlayTxt.className = "overlayTxt";
+            overlayTxt.innerText = `${products[j].name}`
+            overlayImg.appendChild(overlayTxt);
             card.innerHTML += `<div class="prodEtail">
-                                    <p class="proName">${products[j].name}</p>
-                                    <p class="price"> <span style="font-size: 30px;"></span></p>
+                                    <p class="proName" style="display:none;">${products[j].name}</p>
+                                    <p class="price" style="display:none;"> <span style="font-size: 30px;"></span></p>
                                     <p style='display: none' class="disp">${products[j].description}</p>
                                 </div>`
 
@@ -37,7 +44,6 @@ for (let i = 0; i < products.length; i += 3) {
                 cardData = card.childNodes;
                 document.getElementById('prodImg-main').style.backgroundImage = cardData[0].style.backgroundImage;
                 document.getElementById('proName-main').innerText = cardData[1].childNodes[1].innerText;
-                document.getElementById('rate').innerText = cardData[1].childNodes[3].childNodes[1].innerText;
                 document.getElementById('disp-main').innerText = cardData[1].childNodes[5].innerText;
                 mainCard.style.display = 'grid';
             })
