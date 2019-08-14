@@ -1,36 +1,36 @@
 data = '[{\
     "name" : "Curry Cuts",\
-    "image" : "./images/currycuts.jpg",\
+    "image" : "./images/CurryCutsO.jpg",\
         "price" : "1000",\
     "description" : "These fully cleaned and cut pieces are just waiting to be picked up and made into a variety of mouth-watering dishes.\\nTuna: Packed with healthy proteins and omega 3 fatty acids, the tuna is also considered a delicacy and is widely used to make steaks and sushi.\\nSwordfish: Swordfish is a particularly popular fish for cooking. Since swordfish are large, their meat is usually sold as steaks, which are often grilled."\
 },\
 {\
     "name" : "Pan Fry",\
-    "image" : "./images/leather_jacket-min.JPG",\
+    "image" : "./images/PanFryO.jpg",\
     "price" : "2000",\
     "description" : "Fire up your taste buds and enjoy the most delightful delicacies with these fully cleaned and ready to fry pieces.\\nLeather Jacket: Leather Jacket has become common at the market recently, with the advent of large scale fish farming. This fish has a mild, oily taste similar to Spanish mackerel or Bluefish.\\nRed mullet: The Red mullet, is known for its high levels of omega-3 fatty acids, iodine, iron and phosphorus and is as healthy as it is delicious.\\nAnchovy: Anchovy are used in small quantities to flavor a variety of dishes. Because of the strong flavor, they are also an ingredient in several sauces and condiments."\
 },\
 {\
     "name" : "Steaks",\
-    "image" : "./images/download_3.jpg",\
+    "image" : "./images/BonelessSteaksO.jpg",\
     "price" : "3000",\
     "description" : "Savour the taste of boneless supreme tuna steaks with effortless preparation and without worry of the pricking of fish bones. "\
 },\
 {\
     "name" : "Squid Rings",\
-    "image" : "./images/squid_rings-min.jpg",\
+    "image" : "./images/squidringsO.jpg",\
     "price" : "4000",\
     "description" : "Squid that has been cut into rings and fully cleaned out just for you. Put these into the frying pan to make the crispiest squid rings for you to bite into. "\
 },\
 {\
     "name" : "Shrimps",\
-    "image" : "./images/s3.jpg",\
+    "image" : "./images/shrimpsO.jpg",\
     "price" : "5000",\
     "description" : "Cleaned out and peeled off, all you have to do is cook these soft and crunchy shrimps to make the most delicious dish!"\
 },\
 {\
     "name" : "Clams",\
-    "image" : "./images/download_1.jpg",\
+    "image" : "./images/CleanedClamsO.jpg",\
     "price" : "6000",\
     "description" : "These cleaned and ready to cook clams are so good that once cooked they’ll simply melt in your mouth."\
 },\
