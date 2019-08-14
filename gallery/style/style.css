@@ -11,7 +11,7 @@ body {
     padding-top: 20px;
 }
 
-.Heders{
+.Heders {
     font-family: 'Dancing Script', cursive;
 }
 
@@ -179,6 +179,10 @@ p {
     margin-right: auto;
 }
 
+.gallerytopbox {
+    margin-top: 50px;
+}
+
 @media (max-width: 767px) {
     #pro {
         text-align: center;
@@ -228,5 +232,8 @@ p {
         width: cover;
         border-radius: 5px;
         height: 80%; */
+    }
+    .gallerytopbox {
+        margin-top: 40px;
     }
 }
