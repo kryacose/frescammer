@@ -1,8 +1,8 @@
 // Insert link of image and text below, as per given examples:
 slide = '[\
-        {"location" : "static/assets/s1.jpg",\
+        {"location" : "static/images/s1.jpg",\
         "text" : "The highly acclaimed Kerala Backwaters is serene with palm-lined network of lagoons, lakes, rives and canals that run inland from Kochi to Kollam."},\
-        {"location" : "static/assets/s2.jpg",\
+        {"location" : "static/images/s2.jpg",\
         "text" : "Situated in the  Southwestern Malabar Coast of India, seafood is a favourite staple of Keralites with delicacies aplenty."},\
         {"location" : "static/images/s3.jpg",\
         "text" : "With rich marine wealth and a highly skilled sector, the fisherfolk of Kerala belongs to an important segment of its population."},\
