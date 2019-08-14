@@ -385,15 +385,6 @@ body {
     font-weight: normal;
 }
 
-.imageover {
-    z-index: 1600;
-    width: 20%;
-    top: -15%;
-    padding-left: 5%;
-    margin: 15px auto;
-    position: absolute;
-}
-
 
 /*MOBILE VIEW*/
 
@@ -510,27 +501,5 @@ body {
 @media (max-width: 450px) {
     .topnav {
         background-image: url(waves3.png);
-    }
-}
-
-@media (max-width: 399px) {
-    .imageover {
-        z-index: 1600;
-        width: 30%;
-        top: 0;
-        padding-left: 1%;
-        position: absolute;
-    }
-}
-
-@media (min-width: 399px) and (max-width:1100px) {
-    .imageover {
-        display: none;
-        z-index: 1600;
-        width: 30%;
-        text-align: center;
-        top: 0;
-        margin: auto;
-        position: absolute;
     }
 }
