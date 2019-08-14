@@ -181,7 +181,7 @@ html {
         z-index: 0;
     }
     .slides>div {
-        display: none;
+        /* display: none; */
         /* The text box*/
         position: absolute;
         background: rgba(15, 15, 15, 0.8);
