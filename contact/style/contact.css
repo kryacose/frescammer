@@ -30,9 +30,8 @@ html {
 }
 
 .contact_info {
-    position: relative;
     z-index: 98;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 0px lightgrey inset, -1px -1px 5px 0px lightgrey inset;
@@ -46,15 +45,14 @@ html {
     font-size: 22px;
     font-family: 'Dancing Script', cursive;
     height: fit-content;
-    margin: 30px auto;
     /*margin-right: auto;
     /* margin-bottom: 50px; */
-    text-align: left;
+    /* text-align: left; */
 }
 
 .contact_info2 {
-    position: relative;
-    z-index: 98;
+    position: absolute;
+    z-index: 99;
     margin-top: 50px;
     background-color: white;
     border-radius: 10px;
@@ -69,13 +67,13 @@ html {
     font-size: 25px;
     font-family: 'Dancing Script', cursive;
     height: fit-content;
-    margin: 30px auto;
+    /* margin: 30px auto; */
     /*margin-right: auto;
     /* margin-bottom: 50px; */
     text-align: center;
 }
 
-.contact_info2 h1{
+.contact_info2 h1 {
     font-size: 1.5em;
 }
 
@@ -111,41 +109,45 @@ html {
     padding-top: 10px;
     padding-left: -50px;
     /* padding: 10px -100px; */
-
 }
 
 input[type="text"],
 textarea {
-  width: 80%;
-  padding: 6px;
-  font-size: 16px;
-  border: 1px solid rgb(109, 217, 224);
-  background: rgb(244, 247, 246);
-  margin-bottom: 50px;
+    width: 80%;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid rgb(109, 217, 224);
+    background: rgb(244, 247, 246);
+    margin-bottom: 50px;
 }
+
+
 /*Slider*/
+
 input[type="range"] {
     position: relative;
     margin: 0 90px;
-  }
+}
+
 input[type="range"]:before,
 input[type="range"]:after {
-  position: absolute;
-  font-family: 'Dancing Script', cursive;
-  
-  font-size: 25px; 
-  letter-spacing: 0.5px;
-  top: -2px;
-  color: #015564;
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    top: -2px;
+    color: #015564;
 }
-input[type="range"]:before{
+
+input[type="range"]:before {
     content: "poor";
     left: -100px;
-  }
-  input[type="range"]:after{
+}
+
+input[type="range"]:after {
     content: "excellent";
     right: -120px;
-  }
+}
 
 input[type="range"] {
     -webkit-appearance: none !important;
@@ -157,11 +159,11 @@ input[type="range"] {
     border: 1px solid #20bfcf;
     border-radius: 10px;
     display: block;
-  }
+}
 
-  input[type="range"]:focus {
+input[type="range"]:focus {
     outline: none;
-  }
+}
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none !important;
@@ -174,17 +176,20 @@ input[type="range"]::-webkit-slider-thumb {
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.15s;
-  }
+}
 
-input[type="range"]::-webkit-slider-thumb:hover, input[type="range"]::-webkit-slider-thumb:active {
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:active {
     height: 20px;
     width: 20px;
     border: 6px solid #015564;
     background: #fff;
     box-shadow: 0 0 0 0px rgb(0, 162, 191), 0 0 8px #015564 inset;
-  }
+}
+
 
 /* end of slider*/
+
 input[type="submit"] {
     display: block;
     margin: 20px auto 50px;
@@ -199,12 +204,12 @@ input[type="submit"] {
     border-radius: 50px;
     font-size: 1em;
     position: auto;
-    
-  }
-  input[type="submit"]:hover {
+}
+
+input[type="submit"]:hover {
     background: #12656d;
     cursor: pointer;
-  }
+}
 
 .order {
     /* display: block; */
@@ -228,6 +233,7 @@ input[type="submit"] {
     width: 40vw;
     height: 450px;
 }
+
 #tboxc {
     /* position: absolute; */
     /* left: 20%; */
@@ -244,6 +250,49 @@ input[type="submit"] {
     margin: 0px auto 0px auto;
 }
 
+.column {
+    float: left;
+    width: 50%;
+}
+
+.box {
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 1px 1px 5px 0px lightgrey inset, -1px -1px 5px 0px lightgrey inset;
+    height: 600px;
+}
+
+
+/* Clear floats after the columns */
+
+.contactrow:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.box h1 {
+    font-size: 1.5em;
+}
+
+.box a {
+    text-decoration: none;
+    line-height: 20px;
+    color: black;
+}
+
+.box i {
+    width: 25px;
+    font-size: 25px;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+.box p {
+    line-height: 30px;
+    margin: 0;
+    display: inline-block;
+}
 
 @media (max-width: 767px) {
     .container {
