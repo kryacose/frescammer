@@ -15,6 +15,21 @@ html {
     height: 620px;
 }
 
+.rating input{
+    cursor: pointer;
+    
+}
+
+
+.fa fa-star{
+    color: azure;
+}
+
+.textbox{
+    height:10em;
+    width:  20em;
+
+}
 
 /* Clear floats after the columns */
 
