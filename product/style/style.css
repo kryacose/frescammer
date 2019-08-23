@@ -13,7 +13,7 @@ body {
 
 #pro {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Domine', serif;
     font-size: 40px;
     margin-top: 30px;
 }
@@ -22,7 +22,7 @@ body {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Domine', serif;
     font-size: 1.2em;
     margin-top: 20px;
 }
@@ -150,7 +150,7 @@ p {
 
 .proName {
     font-size: 25px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Domine', serif;
     margin: 0px;
     margin-top: 10px;
     font-weight: normal;
@@ -158,7 +158,7 @@ p {
 
 #proName-main {
     font-size: 30px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Domine', serif;
     margin: 0px;
     margin-top: 10px;
     font-weight: bold;
@@ -168,7 +168,7 @@ p {
     text-align: justify;
     padding: 0px 30px;
     font-size: 1em;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Domine', serif;
 }
 
 #close {
@@ -242,14 +242,14 @@ p {
     }
     #pro {
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Domine', serif;
         font-size: 30px;
         margin-top: 0px;
     }
     #ppro {
         padding-left: 20px;
         padding-right: 20px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Domine', serif;
         font-size: 1.1em;
         margin-top: 20px;
     }
