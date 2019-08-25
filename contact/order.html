@@ -50,22 +50,27 @@
         <div class="container">
             <div class="row">
                 <div class="box column">
-                    <h1>Contact info</h1>For further enquiries or clarifications, please contact: <br><br>
-                          <a href="tel:+9865327410" style="font-size: 19px;"><i class="fa fa-phone"
-                            aria-hidden="true"></i> 9865327410</a><br><br>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@frescamer.com" style="font-size: 19px;"><i class="fa fa-envelope"
-                            aria-hidden="true"></i>info@frescamer.com</a><br><br>
-                    <a href="https://www.google.com/maps/place/Model+Engineering+College/@10.0283637,76.3263237,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080c5006491601:0xcf23e14245d4694d!8m2!3d10.0283637!4d76.3285124" style="font-size: 19px;" style="font-size: 19px;"><i class="fa fa-map-marker"
-                            aria-hidden="true"></i>
-                        <p>Rajkamal Palakal,<br>Nettepadam lane,<br>Kochi-682016<br>Kerala, India<br><br></p>
-                    </a>
-                    <div class="order">
-                        <a href=order.html>
-                            <p style="color: white">Order Now</p>
-                        </a>
+                    <h1>Order Details</h1>
+                    <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted) {window.location='thankyouorder.html' ;}"></iframe>
 
+                    Please enter your email and the details of your order: <br>
+
+                    <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScJBeD0aHzTiEgXFI5qyIQBMiX2HgiXP8YcCfZHzmrwm1GQYQ/formResponse" method="POST" 
+                    target="hidden_iframe" onsubmit="submitted=true;" id="mG61Hd"><br>
+                    
+                    <label>Email address:*</label><br>
+                    <input type="email" placeholder="Email Address*" name="entry.671390999" required><br>
+                    <label>Items to Order:*</label><br><small style="font-family: 'Domine', italic">Please enter the number of each item that you want to buy:</small><br>
+                    <textarea class="textbox" name="entry.1843040132" id="explain" required></textarea>
+                    <br>
+                    
+                    <div class="order">
+                        <input class="submit" type="submit" value="Submit">
                     </div>
                     <br><br>
+                    </form>
                 </div>
 
 
