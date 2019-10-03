@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='./style/style.css'>
     <link rel="stylesheet" href='../static/assets/global.css'>
     <title>Recipes</title>
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".topnav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </head>
 
 <body style="background-image: url(../static/assets/grey2.png)">
@@ -20,7 +29,7 @@
                 <p id="mobi"> Contact Us</p>
             </a>
         </div>
-        <div class="topnav">
+        <div class="topnav topnav2">
             <div>
                 <a href="../">
                     <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
@@ -67,12 +76,13 @@
             </div>
         </div>
         <div id="box">
-            <div class='bannerImage overlay'><!--<img src='../static/images/s1.jpg'>-->
+            <div class='bannerImage overlay'>
+                <!--<img src='../static/images/s1.jpg'>-->
                 <div class="centered">
                     <h1>RECIPES</h1>
                 </div>
             </div>
-            <br><br><br><br>
+            <br><br>
             <!-- <div class="tbox">
                 <h1>RECIPES</h1>
                 <p>A wide range of Recipes can be prepared from our Products</p>

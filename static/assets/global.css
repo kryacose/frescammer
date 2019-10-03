@@ -14,7 +14,7 @@ body {
     position: fixed;
     z-index: 300;
     /* background-color: darkcyan; */
-    background-image: url(waves2.png);
+    /* background-image: url(waves2.png); */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -28,6 +28,17 @@ body {
     font-size: 50px;
     /* border-radius: 2px; */
     transition: 500ms;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.topnav2 {
+    background-image: url(waves2.png);
+}
+
+.topnav.scrolled {
+    /* background-color: blue !important; */
+    background-image: url(waves2.png);
+    transition: height 2000ms linear;
 }
 
 
@@ -287,12 +298,17 @@ body {
 }
 
 .overlay {
-    background-color: #50c2d1;
+    background-color: transparent;
     position: relative;
     width: 100%;
     height: 30vh;
     opacity: 0.70;
     z-index: 2;
+}
+
+.overlay h1 {
+    color: #00adbf;
+    font-size: 120%;
 }
 
 .card img {
@@ -365,7 +381,7 @@ body {
     border-radius: 5px;
     margin: 10px auto;
     width: 80%;
-    padding: 5px 5px;
+    padding: 5px 15px;
     border: 2px dashed #fff;
     outline: 2px dashed #00adbf;
     box-shadow: 0 0 0 6px #50c2d1, 0 0 1px 7px #00adbf;
@@ -375,8 +391,7 @@ body {
     width: 30%;
     height: 150%;
     float: left;
-    padding: 2%;
-    padding-top: 2%;
+    padding: 1% 1% 0 0;
 }
 
 #main>p {
@@ -489,6 +504,9 @@ body {
         padding: 0;
         width: 100%;
     }
+    .overlay {
+        height: 20vh;
+    }
 }
 
 @media (max-width:1007px) {
@@ -501,7 +519,10 @@ body {
 }
 
 @media (max-width: 450px) {
-    .topnav {
+    .topnav2 {
+        background-image: url(waves3.png);
+    }
+    .topnav.scrolled {
         background-image: url(waves3.png);
     }
 }

@@ -3,6 +3,7 @@ html {
     margin: 0%;
     width: 100%;
     height: 100%;
+    font-family: 'Montserrat';
 }
 
 .container {
@@ -150,7 +151,52 @@ html {
     right: 10vw;
 }
 
+.banner-div {
+    margin: -10%;
+    width: 110%;
+    height: 118%;
+    background-image: url('../images/bannerimg.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#banner-logo {
+    width: 30%;
+    z-index: 3;
+    position: relative;
+    padding-top: 15%;
+    padding-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.card {
+    font-size: 80%;
+}
+
+#top-fish {
+    margin-bottom: -5%;
+}
+
+#welove-content {
+    text-align: justify;
+}
+
+#welove-content p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 90%;
+}
+
+.mobile-buffer {
+    display: none;
+}
+
 @media (max-width: 767px) {
+    .banner-div {
+        height: 120%;
+    }
     .display-left {
         left: 0;
     }
@@ -227,5 +273,32 @@ html {
         font-size: 20px;
         top: 50%;
         /* text-align: center; */
+    }
+    #top-fish {
+        width: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        display: block;
+    }
+    #bottom-fish {
+        width: 70% !important;
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+        display: block;
+    }
+    .buffer {
+        display: none;
+    }
+    .mobile-buffer {
+        display: block !important;
+    }
+    #banner-logo {
+        width: 50%;
+        padding-top: 50% !important;
+    }
+    #best-of-best {
+        width: 70% !important;
     }
 }

@@ -9,17 +9,25 @@
     <link rel="stylesheet" type="text/css" href="./style/contact.css">
     <link rel="stylesheet" type="text/css" href="../static/assets/global.css">
     <script type="application/javascript" src='../static/js/nav.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".topnav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 
 
 </head>
 
 <body style="background-image: url(../static/assets/grey2.png)">
     <div class="container">
-        <div class="topnav">
+        <div class="topnav topnav2">
             <div>
                 <a href="../">
                     <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
@@ -51,57 +59,55 @@
             <div class="row">
                 <div class="box column">
                     <h1>Order Details</h1>
-                    <script type="text/javascript">var submitted=false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                    onload="if(submitted) {window.location='thankyouorder.html' ;}"></iframe>
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyouorder.html' ;}"></iframe> Please enter your email and the details of your order: <br>
 
-                    Please enter your email and the details of your order: <br>
+                    <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScJBeD0aHzTiEgXFI5qyIQBMiX2HgiXP8YcCfZHzmrwm1GQYQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="mG61Hd"><br>
 
-                    <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScJBeD0aHzTiEgXFI5qyIQBMiX2HgiXP8YcCfZHzmrwm1GQYQ/formResponse" method="POST" 
-                    target="hidden_iframe" onsubmit="submitted=true;" id="mG61Hd"><br>
-                    
-                    <label>Email address:*</label><br>
-                    <input type="email" placeholder="Email Address*" name="entry.671390999" required><br>
-                    <label>Items to Order:*</label><br><small style="font-family: 'Domine', italic">Please enter the number of each item that you want to buy:</small><br>
-                    <textarea class="textbox" name="entry.1843040132" id="explain" required></textarea>
-                    <br>
-                    
-                    <div class="order">
-                        <input class="submit" type="submit" value="Submit">
-                    </div>
-                    <br><br>
+                        <label>Email address:*</label><br>
+                        <input type="email" placeholder="Email Address*" name="entry.671390999" required><br>
+                        <label>Items to Order:*</label><br><small style="font-family: 'Domine', italic">Please enter the number of each item that you want to buy:</small><br>
+                        <textarea class="textbox" name="entry.1843040132" id="explain" required></textarea>
+                        <br>
+
+                        <div class="order">
+                            <input class="submit" type="submit" value="Submit">
+                        </div>
+                        <br><br>
                     </form>
                 </div>
 
 
                 <div class="box column">
                     <h1>Feedback</h1>
-                    <script type="text/javascript">var submitted=false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                    onload="if(submitted) {window.location='thankyou.html' ;}"></iframe>
-                    
-                    <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScQoJ025q-nqt6njV1a0aGk5NaXzwADcP9xrBbGQ5uPG0cCRQ/formResponse" method="POST" 
-                    target="hidden_iframe" onsubmit="submitted=true;" id="mG61Hd">
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html' ;}"></iframe>
+
+                    <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScQoJ025q-nqt6njV1a0aGk5NaXzwADcP9xrBbGQ5uPG0cCRQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="mG61Hd">
 
                         <label for="explain">Rate your experience on this site.</label><br><br>
                         <!-- <input name="entry.1813641826" type="range" min="1" max="5" step="1"> -->
                         <div class="star-rating">
-                        <input id="star-1" type="radio" name="entry.1813641826" class="star1" value="5"><label for="star-1" >
+                            <input id="star-1" type="radio" name="entry.1813641826" class="star1" value="5"><label for="star-1">
                             <i class="active fa fa-star" aria-hidden="true"></i>
                         </label>
-                        <input id="star-2" type="radio" name="entry.1813641826" class="star2" value="4"><label for="star-2" >
+                            <input id="star-2" type="radio" name="entry.1813641826" class="star2" value="4"><label for="star-2">
                             <i class="active fa fa-star" aria-hidden="true"></i>
                         </label>
-                        <input id="star-3" type="radio" name="entry.1813641826" class="star3" value="3"><label for="star-3" >
+                            <input id="star-3" type="radio" name="entry.1813641826" class="star3" value="3"><label for="star-3">
                             <i class="active fa fa-star" aria-hidden="true"></i>
                         </label>
-                        <input id="star-4" type="radio" name="entry.1813641826" class="star4" value="2"><label for="star-4" >
+                            <input id="star-4" type="radio" name="entry.1813641826" class="star4" value="2"><label for="star-4">
                             <i class="active fa fa-star" aria-hidden="true"></i>
                         </label>
-                        <input id="star-5" type="radio" name="entry.1813641826" class="star5" value="1"><label for="star-5" >
+                            <input id="star-5" type="radio" name="entry.1813641826" class="star5" value="1"><label for="star-5">
                             <i class="active fa fa-star" aria-hidden="true"></i>
                         </label>
-                        <br><br>
+                            <br><br>
                         </div>
                         <label for="explain">Suggestions (if any):</label><br>
                         <textarea class="textbox" name="entry.568598450" id="explain"></textarea><br>

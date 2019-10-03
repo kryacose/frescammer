@@ -56,4 +56,6 @@ for (let i = 0; i < products.length; i += 3) {
         }
     }
     main.appendChild(cardRow);
+    linebreak = document.createElement('br');
+    main.appendChild(linebreak);
 }

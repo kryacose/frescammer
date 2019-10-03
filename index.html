@@ -15,10 +15,10 @@
     <link rel="stylesheet" type="text/css" href="static/css/index.css">
     <link rel="stylesheet" type="text/css" href="static/css/bootstrap-iso.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--<link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat|PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat|PT+Sans+Narrow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
@@ -29,7 +29,14 @@
     <script type="text/javascript" src="static/js/slide.json"></script>
     <script type="text/javascript" src="static/js/index.js"></script>
     <script type="text/javascript" src="./static/js/nav.js"></script>
-
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".topnav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -65,11 +72,14 @@
         <!--Each div with class "slides is each slide of the slideshow. It has two children, image and textbox." -->
         <!-- To add more slides, follow the slides.json file instructions. -->
         <br>
-        <div class="slides" id="slide1"></div>
+        <!-- <div class="slides" id="slide1"></div>
 
         <button class="scroll_btn display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button>
+        <button class="scroll_btn display-right" onclick="plusDivs(1)">&#10095;</button> -->
 
+        <div class="banner-div">
+            <img id="banner-logo" src="static/images/flogo.png" data-aos="fade-up" data-aos-duration="2000" />
+        </div>
 
 
         <div id="mySidepanel" class="sidepanel">
@@ -89,35 +99,42 @@
                 plusDivs(1)
             }, 5000);
         </script>
-
-        <div class="tbox" style="background-color: transparent;box-shadow:none; margin: 0px auto 0px auto;" data-aos="fade-up" data-aos-duration="2000">
-            <div class="bootstrap-iso pair">
-                <div class="row ">
-                    <div class="card-deck">
-                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/f1.png" height="90" /><br><br>
-                            <!-- <h1 id="cursive">Stay Clean, Stay Green</h1> -->
-                            Sustainable and eco-friendly practices are used in order to minimise the impact on the environment.
-                        </div>
-                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/f2.png" height="90" /><br><br>
-                            <!-- <h1 id="cursive">Safe and reliable</h1> -->
-                            The food we bring to your plates is packaged in 100% tried and tested food grade packaging.
-                        </div>
-                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/f3.png" height="90" /><br><br>
-                            <!-- <h1 id="cursive">Quality Assured</h1> -->
-                            Strict lab tests and quick freezing for each and every product ensures the highest quality possible. </div>
-                        <div class="card col-sm-3" style="background-color:transparent; margin: 20px 0px 30px 0px;"><img src="./static/images/f4.png" height="90" /><br><br>
-                            <!-- <h1 id="cursive">100% Healthy</h1> -->
-                            HACCP regulations are followed while processing, in order to provide a clean impurity-free environment.
+        <div style="margin-top: 15%;" data-aos="fade-up" data-aos-duration="2000">
+            <img id="top-fish" src="static/images/fish1.png" style="width:20%; display:block;" />
+        </div>
+        <div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <img id="best-of-best" src="static/images/best.png" style="width:30%; margin-left:auto; margin-right:auto; display:block;" />
+            </div>
+            <div class="tbox" style="background-color: transparent;box-shadow:none; margin: 0px auto 0px auto;" data-aos="fade-up" data-aos-duration="2000">
+                <div class="bootstrap-iso pair">
+                    <div class="row ">
+                        <div class="card-deck">
+                            <div class="card col-sm-4" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/f1.png" height="90" /><br><br>
+                                <!-- <h1 id="cursive">Stay Clean, Stay Green</h1> -->
+                                Sustainable and eco-friendly practices are used in order to minimise the impact on the environment.
+                            </div>
+                            <div class="card col-sm-4" style="background-color:transparent; margin: 20px 0px 50px 0px;"><img src="./static/images/f3.png" height="90" /><br><br>
+                                <!-- <h1 id="cursive">Quality Assured</h1> -->
+                                Strict lab tests and quick freezing for each and every product ensures the highest quality possible. </div>
+                            <div class="card col-sm-4" style="background-color:transparent; margin: 20px 0px 30px 0px;"><img src="./static/images/f4.png" height="90" /><br><br>
+                                <!-- <h1 id="cursive">100% Healthy</h1> -->
+                                HACCP regulations are followed while processing, in order to provide a clean impurity-free environment.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div data-aos="fade-up" data-aos-duration="2000">
+            <img id="bottom-fish" src="static/images/fish2.png" style="width:20%; float:right; display:block; margin-top: -5%;" />
+        </div>
+        <div class="buffer"><br><br><br><br><br><br><br></div>
+        <div class="mobile-buffer"><br><br><br></div>
         <div class="row" data-aos="fade-up" data-aos-duration="1000">
             <div id="main">
-
                 <div>
-                    <div><img src="static/assets/back-packaging.png" class="imgSide" alt="">
+                    <div id="welove-content"><img src="static/assets/back-packaging.png" class="imgSide" alt="">
 
                         <p>We at Frescamer believe that each and every one of you deserve the very best when it comes to flavour, freshness and quality. World class facilities process and preserve the seafood so as to ensure that each and every one of our
                             products are export quality, which is the best quality of food you would find in the market. Strict quality control measures are followed including HACCP regulations while processing, as well as quick freezing for the seafood
@@ -125,7 +142,7 @@
                             <br>
                             <br> From ready to prepare curry cuts, delicious and juicy fish steaks, to crunchy squid rings, if you consider yourself a connoisseur of fine dishes, especially of seafood, then rest assured, Frescamer is your next favorite
                             chef.
-                            
+
                             <br><br>-Team Frescamer
                         </p>
                     </div>

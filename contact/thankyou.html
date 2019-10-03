@@ -9,16 +9,24 @@
     <link rel="stylesheet" type="text/css" href="./style/contact.css">
     <link rel="stylesheet" type="text/css" href="../static/assets/global.css">
     <script type="application/javascript" src='../static/js/nav.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".topnav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 
 
 </head>
 
 <body style="background-image: url(../static/assets/grey2.png)">
     <div class="container">
-        <div class="topnav">
+        <div class="topnav topnav2">
             <div>
                 <a href="../">
                     <img src="../static/assets/logo.png" alt="Frescamer" class="logo">
@@ -66,7 +74,7 @@
                     </div>
                     <br><br>
                 </div>
-                
+
                 <div class="box column">
                     <h1>Thank you for the feedback!</h1>
                     <p>We take all our feedback seriously. We will implement all suggestions in the near future. <br/>Please continue shopping!</p>
@@ -93,4 +101,4 @@
 
 </body>
 
-</html>     
+</html>
