@@ -155,7 +155,7 @@ html {
     margin: -10%;
     width: 110%;
     height: 118%;
-    background-image: url('../images/bg-image-new.jpg');
+    background-image: url('../images/bg-image-new-min.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -213,7 +213,7 @@ html {
 
 @media (max-width: 767px) {
     .banner-div {
-        height: 120%;
+        height: 110%;
     }
     .display-left {
         left: 0;
