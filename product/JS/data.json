@@ -2,13 +2,13 @@ data = '[{\
     "name" : "Curry Cuts",\
     "image" : "./images/CurryCutsO.jpg",\
         "price" : "1000",\
-    "description" : "These fully cleaned and cut pieces are just waiting to be picked up and made into a variety of mouth-watering dishes.\\nTuna: Packed with healthy proteins and omega 3 fatty acids, the tuna is also considered a delicacy and is widely used to make steaks and sushi.\\nSwordfish: Swordfish is a particularly popular fish for cooking. Since swordfish are large, their meat is usually sold as steaks, which are often grilled."\
+    "description" : "These fully cleaned and cut pieces are just waiting to be picked up and made into a variety of mouth-watering dishes."\
 },\
 {\
     "name" : "Pan Fry",\
     "image" : "./images/PanFryO.jpg",\
     "price" : "2000",\
-    "description" : "Fire up your taste buds and enjoy the most delightful delicacies with these fully cleaned and ready to fry pieces.\\nLeather Jacket: Leather Jacket has become common at the market recently, with the advent of large scale fish farming. This fish has a mild, oily taste similar to Spanish mackerel or Bluefish.\\nRed mullet: The Red mullet, is known for its high levels of omega-3 fatty acids, iodine, iron and phosphorus and is as healthy as it is delicious.\\nAnchovy: Anchovy are used in small quantities to flavor a variety of dishes. Because of the strong flavor, they are also an ingredient in several sauces and condiments."\
+    "description" : "Fire up your taste buds and enjoy the most delightful delicacies with these fully cleaned and ready to fry pieces."\
 },\
 {\
     "name" : "Steaks",\
@@ -26,7 +26,7 @@ data = '[{\
     "name" : "Shrimps",\
     "image" : "./images/shrimpsO.jpg",\
     "price" : "5000",\
-    "description" : "Cleaned out and peeled off, all you have to do is cook these soft and crunchy shrimps to make the most delicious dish!"\
+    "description" : "Deveined and peeled off, all you have to do is cook these soft shrimps to make the most delicious dish!"\
 },\
 {\
     "name" : "Clams",\

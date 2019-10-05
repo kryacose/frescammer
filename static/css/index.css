@@ -4,6 +4,7 @@ html {
     width: 100%;
     height: 100%;
     font-family: 'Montserrat';
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -20,7 +21,6 @@ html {
     position: absolute;
     left: 0;
     top: 0;
-    ;
     z-index: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -155,7 +155,7 @@ html {
     margin: -10%;
     width: 110%;
     height: 118%;
-    background-image: url('../images/bannerimg.png');
+    background-image: url('../images/bg-image-new.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -177,6 +177,24 @@ html {
 
 #top-fish {
     margin-bottom: -5%;
+    width: 20%;
+    display: block;
+    padding-left: 5%;
+}
+
+#bottom-fish {
+    width: 20%;
+    float: right;
+    display: block;
+    margin-top: -5%;
+    padding-right: 5%;
+}
+
+#best-of-best {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #welove-content {

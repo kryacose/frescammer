@@ -12,12 +12,12 @@ body {
 }
 
 .Heders {
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 #pro {
     text-align: center;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 40px;
     margin-top: 30px;
 }
@@ -26,7 +26,7 @@ body {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 1.2em;
     margin-top: 20px;
 }
@@ -143,7 +143,7 @@ p {
 
 .proName {
     font-size: 30px;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
     margin: 0px;
     margin-top: 10px;
     font-weight: bold;
@@ -186,14 +186,14 @@ p {
 @media (max-width: 767px) {
     #pro {
         text-align: center;
-        font-family: 'Domine', serif;
+        font-family: 'Barlow', sans-serif;
         font-size: 30px;
         margin-top: 0px;
     }
     #ppro {
         padding-left: 20px;
         padding-right: 20px;
-        font-family: 'Domine', serif;
+        font-family: 'Barlow', sans-serif;
         font-size: 1.1em;
         margin-top: 20px;
     }

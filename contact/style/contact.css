@@ -66,9 +66,9 @@ html {
 }
 
 .box {
-    box-shadow: 1px 1px 5px 0px lightgrey inset, -1px -1px 5px 0px lightgrey inset;
+    /* box-shadow: 1px 1px 5px 0px lightgrey inset, -1px -1px 5px 0px lightgrey inset;
     border-radius: 10px;
-    background-color: white;
+    background-color: white; */
     text-align: center;
 }
 
@@ -94,9 +94,19 @@ html {
     padding: none;
     border: none;
     color: white;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 25px;
     background-color: transparent;
+}
+
+.headerdivider {
+    border-left: 1px solid #38546d;
+    background: #16222c;
+    width: 1px;
+    height: 500px;
+    position: absolute;
+    right: 50%;
+    top: 200px;
 }
 
 @media (max-width: 767px) {
@@ -110,5 +120,8 @@ html {
         width: 100%;
         margin-top: 5%;
         height: 650px;
+    }
+    .headerdivider {
+        display: none;
     }
 }

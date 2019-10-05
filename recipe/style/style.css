@@ -13,7 +13,7 @@ body {
 
 #pro {
     text-align: center;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 40px;
     margin-top: 30px;
 }
@@ -22,7 +22,7 @@ body {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 1.2em;
     margin-top: 20px;
 }
@@ -60,6 +60,7 @@ body {
 }
 
 #card-main {
+    margin-top: 0;
     display: none;
     height: 80vh;
     width: fit-content;
@@ -74,10 +75,11 @@ body {
     border-width: thin;
     border-color: lightgrey; */
     box-shadow: 1px 1px 10px #777777, -1px 0px 10px #777777;
-    /* overflow: scroll; */
+    /* overflow: hidden; */
     grid-template-rows: auto auto;
     grid-template-columns: auto;
     grid-template-areas: "box1 box2";
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -105,6 +107,8 @@ body {
     background-repeat: no-repeat;
     width: 40vw;
     height: 80vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .prod {
@@ -117,7 +121,7 @@ body {
     grid-area: box1;
     width: 40vw;
     height: 80vh;
-    overflow: scroll;
+    overflow: hidden scroll;
 }
 
 .prodEtail {
@@ -153,7 +157,7 @@ p {
 
 .proName {
     font-size: 25px;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
     margin: 0px;
     margin-top: 10px;
     font-weight: normal;
@@ -161,9 +165,8 @@ p {
 
 #proName-main {
     font-size: 30px;
-    font-family: 'Domine', serif;
-    margin: 0px;
-    margin-top: 10px;
+    font-family: 'Barlow', sans-serif;
+    margin: 10%;
     font-weight: bold;
 }
 
@@ -171,7 +174,7 @@ p {
     text-align: justify;
     padding: 0px 30px 50px 30px;
     font-size: 1em;
-    font-family: 'Domine', serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 #close {
@@ -243,14 +246,14 @@ p {
     }
     #pro {
         text-align: center;
-        font-family: 'Domine', serif;
+        font-family: 'Barlow', sans-serif;
         font-size: 30px;
         margin-top: 0px;
     }
     #ppro {
         padding-left: 20px;
         padding-right: 20px;
-        font-family: 'Domine', serif;
+        font-family: 'Barlow', sans-serif;
         font-size: 1.1em;
         margin-top: 20px;
     }
@@ -281,6 +284,7 @@ p {
         background-repeat: no-repeat;
         width: 100%;
         height: cover;
+        border-radius: 0;
     }
     .prod-main {
         width: 100%;
@@ -289,6 +293,8 @@ p {
         margin-bottom: 80px;
     }
     #card-main {
+        margin-top: 8% !important;
+        border-radius: 0;
         display: none;
         height: 100%;
         width: 100%;
