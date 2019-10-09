@@ -36,7 +36,7 @@
         $(function() {
             $(document).scroll(function() {
                 var $nav = $(".topnav");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > ($('.banner-div').height() - $nav.height()));
+                $nav.toggleClass('scrolled', $(this).scrollTop() > ($('.banner-div').height() - 1.5 * $nav.height()));
             });
         });
     </script>
@@ -102,6 +102,7 @@
                 plusDivs(1)
             }, 5000);
         </script>
+        <div class="mobile-buffer"><br><br><br></div>
         <div style="margin-top: 15%;" data-aos="fade-up" data-aos-duration="2000">
             <img id="top-fish" src="static/images/fish1.png" />
         </div>
