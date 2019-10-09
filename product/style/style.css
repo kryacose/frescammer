@@ -283,6 +283,9 @@ p {
         width: 100vw;
         height: 75vw;
     }
+    #proName-main {
+        margin: 2%;
+    }
     .prod-main {
         width: 100%;
         height: fit-content;
@@ -290,7 +293,7 @@ p {
         margin-bottom: 80px;
     }
     #card-main {
-        margin-top: 8% !important;
+        margin-top: 6% !important;
         display: none;
         height: 100%;
         width: 100%;
