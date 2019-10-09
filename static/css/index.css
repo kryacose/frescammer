@@ -213,6 +213,7 @@ html {
 
 @media (max-width: 767px) {
     .banner-div {
+        background-attachment: initial;
         height: 110%;
     }
     .display-left {

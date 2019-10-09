@@ -36,7 +36,7 @@
         $(function() {
             $(document).scroll(function() {
                 var $nav = $(".topnav");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                $nav.toggleClass('scrolled', $(this).scrollTop() > ($('.banner-div').height() - $nav.height()));
             });
         });
     </script>

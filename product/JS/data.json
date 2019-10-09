@@ -35,10 +35,10 @@ data = '[{\
     "description" : "These cleaned and ready to cook clams are so good that once cooked they’ll simply melt in your mouth."\
 },\
 {\
-    "name" : "Kid\'s Menu",\
+    "name" : "Fish\ Fingers",\
     "image" : "./images/download.jpg",\
     "price" : "6000",\
-    "description" : "Make the best dishes and healthiest meals with our assorted range of seafood items, especially for the youngsters to enjoy.\\nThe rich omega-3 oils, high protein content and low fat also make seafood one of  the healthiest dishes to relish.\\nFish Fingers: These ready to fry fish fingers are just waiting to be put onto the frying pan, and a single bite is sure to make anyone ask for more.\\nFish Steaks: Boneless and delicious, our fish steaks make the perfect treat for every kid."\
+    "description" : "These ready to fry fish fingers are just waiting to be put onto the frying pan, and a single bite is sure to make anyone ask for more."\
 },\
 {\
     "name" : "Pickles",\
